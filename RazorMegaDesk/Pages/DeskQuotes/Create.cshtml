@@ -14,28 +14,28 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Deskquote.CustomerName" class="control-label"></label>
-                <input asp-for="Deskquote.CustomerName" class="form-control" />
+                <label asp-for="Deskquote.CustomerName" class="control-label">Full Name</label>
+                <input asp-for="Deskquote.CustomerName" class="form-control" placeholder="Full Name" />
                 <span asp-validation-for="Deskquote.CustomerName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Deskquote.Width" class="control-label"></label>
+                <label asp-for="Deskquote.Width" class="control-label">Width</label>
                 <input asp-for="Deskquote.Width" class="form-control" placeholder="24 - 96 inches"/>
                 <span asp-validation-for="Deskquote.Width" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Deskquote.Depth" class="control-label"></label>
+                <label asp-for="Deskquote.Depth" class="control-label">Depth</label>
                 <input asp-for="Deskquote.Depth" class="form-control" placeholder="12 - 48 inches" />
                 <span asp-validation-for="Deskquote.Depth" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Deskquote.DrawerCount" class="control-label"></label>
+                <label asp-for="Deskquote.DrawerCount" class="control-label">Drawers</label>
                 <input asp-for="Deskquote.DrawerCount" class="form-control" placeholder="0 - 7" />
                 <span asp-validation-for="Deskquote.DrawerCount" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Deskquote.desktopMaterial" class="control-label"></label>
-                <select asp-for="Deskquote.desktopMaterial" class="form-control"></select>
+                <label asp-for="Deskquote.desktopMaterial" class="control-label">Desktop Material</label><br/>
+                <select asp-for="Deskquote.desktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control"></select>
                 <span asp-validation-for="Deskquote.desktopMaterial" class="text-danger"></span>
             </div>
             <div class="form-group">
