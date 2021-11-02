@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RazorMegaDesk.Data;
 using RazorMegaDesk.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace RazorMegaDesk.Pages.DeskQuotes
 {
@@ -20,12 +22,25 @@ namespace RazorMegaDesk.Pages.DeskQuotes
         }
 
         public IList<Deskquote> Deskquote { get;set; }
-        
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
+
 
         public async Task OnGetAsync()
         {
+
+            var deskquotes = from d in _context.Deskquote
+                            select d;
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                deskquotes = deskquotes.Where(s => s.CustomerName.Contains(SearchString));
+            }
+
+            Deskquote = await deskquotes.ToListAsync();
+
+       
            
-            Deskquote = await _context.Deskquote.ToListAsync();
         }
     }
 }
