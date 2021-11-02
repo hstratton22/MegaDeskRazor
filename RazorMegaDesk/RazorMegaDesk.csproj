@@ -13,11 +13,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\images\laminate.png" />
-    <None Include="wwwroot\images\oak.jpg" />
-    <None Include="wwwroot\images\pine.jpg" />
-    <None Include="wwwroot\images\rosewood.jpg" />
-    <None Include="wwwroot\images\veneer.jpg" />
+    <None Include="wwwroot\images\laminate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\images\oak.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\images\pine.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\images\rosewood.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\images\veneer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
