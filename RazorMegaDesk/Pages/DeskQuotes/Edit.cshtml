@@ -9,61 +9,70 @@
 
 <h4>Deskquote</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Deskquote.ID" />
-            <div class="form-group">
+<div class="container">
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Deskquote.ID" />
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
                 <label asp-for="Deskquote.CustomerName" class="control-label"></label>
                 <input asp-for="Deskquote.CustomerName" class="form-control" />
                 <span asp-validation-for="Deskquote.CustomerName" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            <div class="col-md-4 mb-3">
                 <label asp-for="Deskquote.quoteDate" class="control-label"></label>
                 <input asp-for="Deskquote.quoteDate" class="form-control" />
                 <span asp-validation-for="Deskquote.quoteDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
+        </div>
+        <div class="form-row">
+            <div class="col-4 mb-3">
                 <label asp-for="Deskquote.Width" class="control-label"></label>
                 <input asp-for="Deskquote.Width" class="form-control" />
                 <span asp-validation-for="Deskquote.Width" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-4 mb-3">
                 <label asp-for="Deskquote.Depth" class="control-label"></label>
                 <input asp-for="Deskquote.Depth" class="form-control" />
                 <span asp-validation-for="Deskquote.Depth" class="text-danger"></span>
             </div>
-            <div class="form-group">
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
                 <label asp-for="Deskquote.DrawerCount" class="control-label"></label>
                 <input asp-for="Deskquote.DrawerCount" class="form-control" />
                 <span asp-validation-for="Deskquote.DrawerCount" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-4 mb-3">
                 <label asp-for="Deskquote.desktopMaterial" class="control-label">Desktop Material</label><br />
                 <select asp-for="Deskquote.desktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
                 </select>
                 <span asp-validation-for="Deskquote.desktopMaterial" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Deskquote.RushDays" class="control-label">Rush Shipping?</label>
-                <select asp-for="Deskquote.RushDays" class="form-control">
-                    <option value="0">Free Standard Shipping</option>
-                    <option value="3">3</option>
-                    <option value="5">5</option>
-                    <option value="7">7</option>
-                </select>
-                <span asp-validation-for="Deskquote.RushDays" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+            <label asp-for="Deskquote.RushDays" class="control-label">Rush Shipping?</label>
+            <select asp-for="Deskquote.RushDays" class="form-control">
+                <option value="0">Free Standard Shipping</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+            </select>
+            <span asp-validation-for="Deskquote.RushDays" class="text-danger"></span>
+                </div>
+        </div>
+        <div class="form-row mb-3">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
 </div>
 
+
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a class="btn btn-outline-info" asp-page="./Index">Back to List</a>
 </div>
 
 @section Scripts {
