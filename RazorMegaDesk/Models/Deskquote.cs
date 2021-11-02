@@ -35,8 +35,22 @@ namespace RazorMegaDesk.Models
         [Display(Name = "Drawer Count")]
         public int DrawerCount { get; set; }
 
+        [Required]
         [Display(Name = "Desktop Material"), EnumDataType(typeof(DesktopMaterial))]
         public DesktopMaterial desktopMaterial { get; set; }
+
+        [Display(Name = "Rush Shipping")]
+        public int RushDays { get; set; }
+
+        [Display(Name = "Total Cost")]
+        public int Cost
+        {
+            get
+            {
+                return AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
+            }
+        }
+
 
         private int _rush;
         private int[,] rushShipping;
@@ -45,14 +59,7 @@ namespace RazorMegaDesk.Models
         private const int OversizeSurface = 1;
         private const int OversizeLowNum = 1000;
         private const int OversizeHighNum = 2000;
-        /*
-         * public int Cost
-        {
-            get
-            {
-                return AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
-            }
-        }
+        
 
 
         /// <summary>
@@ -151,17 +158,17 @@ namespace RazorMegaDesk.Models
         /// </summary>
         /// <returns></returns>
 
-        /*public override string ToString()
+        public override string ToString()
         {
             return base.ToString() + "\n" +
                "name:" + CustomerName;
-        }*/
+        }
 
         /// <summary>
         /// Opens and Reads the rushorder Price file, then returns it as a 2d Array
         /// </summary>
         /// <returns></returns>
-        /*
+        
         public int[,] GetRushOrder()
         {
             try
@@ -188,7 +195,7 @@ namespace RazorMegaDesk.Models
             }
 
             return rushShipping;
-        }*/
+        }
 
 
 

@@ -30,20 +30,30 @@
             <input asp-for="Deskquote.Width" class="form-control" placeholder="24 - 96 inches" />
             <span asp-validation-for="Deskquote.Width" class="text-danger"></span>
         </div>
-        <div class="col-auto">
+        <div class="col-md-4 mb-3">
             <label asp-for="Deskquote.Depth" class="control-label">Depth</label>
             <input asp-for="Deskquote.Depth" class="form-control" placeholder="12 - 48 inches" />
             <span asp-validation-for="Deskquote.Depth" class="text-danger"></span>
         </div>
     </div>
-    <div class="form-row align-items-center">
+    <div class="form-row">
         <div class="col-md-4 mb-3">
             <label asp-for="Deskquote.DrawerCount" class="control-label">Drawers</label>
             <input asp-for="Deskquote.DrawerCount" class="form-control" placeholder="0 - 7" />
             <span asp-validation-for="Deskquote.DrawerCount" class="text-danger"></span>
         </div>
+        <div class="col-md-4 mb-3">
+            <label asp-for="Deskquote.RushDays" class="control-label">Rush Shipping?</label>
+            <select asp-for="Deskquote.RushDays" class="form-control">
+                <option value="0">Free Standard Shipping</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+            </select>
+            <span asp-validation-for="Deskquote.RushDays" class="text-danger"></span>
+        </div>
     </div>
-    <div class="form-row align-items-center">
+    <div class="form-row">
         <div class="col-md-4 mb-3">
             <label asp-for="Deskquote.desktopMaterial" class="control-label">Desktop Material</label><br />
             <select asp-for="Deskquote.desktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
