@@ -51,10 +51,10 @@ namespace RazorMegaDesk.Pages.DeskQuotes
                     deskquoteIQ = deskquoteIQ.OrderByDescending(s => s.CustomerName);
                     break;
                 case "Date":
-                    deskquoteIQ = deskquoteIQ.OrderBy(s => s.quoteDate);
+                    deskquoteIQ = deskquoteIQ.OrderBy(s => s.QuoteDate);
                     break;
                 case "date_desc":
-                    deskquoteIQ = deskquoteIQ.OrderByDescending(s => s.quoteDate);
+                    deskquoteIQ = deskquoteIQ.OrderByDescending(s => s.QuoteDate);
                     break;
                 default:
                     deskquoteIQ = deskquoteIQ.OrderBy(s => s.CustomerName);

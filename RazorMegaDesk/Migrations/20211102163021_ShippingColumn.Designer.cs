@@ -45,10 +45,10 @@ namespace RazorMegaDesk.Migrations
                     b.Property<int>("Width")
                         .HasColumnType("int");
 
-                    b.Property<int>("desktopMaterial")
+                    b.Property<int>("DesktopMaterial")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("quoteDate")
+                    b.Property<DateTime>("QuoteDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");

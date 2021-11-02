@@ -20,13 +20,15 @@ namespace RazorMegaDesk.Pages.DeskQuotes
             _context = context;
         }
 
+        [BindProperty]
+        public Deskquote Deskquote { get; set; }
         public IActionResult OnGet()
         {
+      
             return Page();
         }
 
-        [BindProperty]
-        public Deskquote Deskquote { get; set; }
+       
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()

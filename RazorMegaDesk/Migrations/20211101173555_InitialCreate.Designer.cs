@@ -41,7 +41,7 @@ namespace RazorMegaDesk.Migrations
                     b.Property<int>("Width")
                         .HasColumnType("int");
 
-                    b.Property<int>("desktopMaterial")
+                    b.Property<int>("DesktopMaterial")
                         .HasColumnType("int");
 
                     b.HasKey("ID");

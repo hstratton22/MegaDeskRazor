@@ -8,7 +8,7 @@ namespace RazorMegaDesk.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<DateTime>(
-                name: "quoteDate",
+                name: "QuoteDate",
                 table: "Deskquote",
                 type: "datetime2",
                 nullable: false,
@@ -18,7 +18,7 @@ namespace RazorMegaDesk.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "quoteDate",
+                name: "QuoteDate",
                 table: "Deskquote");
         }
     }

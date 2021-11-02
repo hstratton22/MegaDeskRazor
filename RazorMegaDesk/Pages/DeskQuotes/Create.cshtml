@@ -14,14 +14,14 @@
     <div class="form-row">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="col-md-4 mb-3">
-            <label asp-for="Deskquote.CustomerName" class="control-label">Customer Name</label>
+            <label asp-for="Deskquote.CustomerName"  class="control-label">Customer Name</label>
             <input asp-for="Deskquote.CustomerName" class="form-control" placeholder="Full Name" />
             <span asp-validation-for="Deskquote.CustomerName" class="text-danger"></span>
         </div>
         <div class="col-md-4 mb-3">
-            <label asp-for="Deskquote.quoteDate" class="control-label">Date</label>
-            <input asp-for="Deskquote.quoteDate" class="form-control">
-            <span asp-validation-for="Deskquote.quoteDate" class="text-danger"></span>
+            <label asp-for="Deskquote.QuoteDate" class="control-label">Date</label>
+            <input asp-for="Deskquote.QuoteDate" type="date" class="form-control">
+            <span asp-validation-for="Deskquote.QuoteDate" class="text-danger"></span>
         </div>
     </div>
     <div class="form-row">
@@ -55,10 +55,10 @@
     </div>
     <div class="form-row">
         <div class="col-md-4 mb-3">
-            <label asp-for="Deskquote.desktopMaterial" class="control-label">Desktop Material</label><br />
-            <select asp-for="Deskquote.desktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
+            <label asp-for="Deskquote.DesktopMaterial" class="control-label">Desktop Material</label><br />
+            <select asp-for="Deskquote.DesktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
             </select>
-            <span asp-validation-for="Deskquote.desktopMaterial" class="text-danger"></span>
+            <span asp-validation-for="Deskquote.DesktopMaterial" class="text-danger"></span>
         </div>
        
     </div>

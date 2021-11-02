@@ -40,12 +40,12 @@
                 @Html.DisplayNameFor(model => model.Deskquote[0].DrawerCount)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Deskquote[0].desktopMaterial)
+                @Html.DisplayNameFor(model => model.Deskquote[0].DesktopMaterial)
             </th>
 
             <th>
                 <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
-                    @Html.DisplayNameFor(model => model.Deskquote[0].quoteDate)
+                    @Html.DisplayNameFor(model => model.Deskquote[0].QuoteDate)
                 </a>
             </th>
             <th>
@@ -74,10 +74,10 @@
                 @Html.DisplayFor(modelItem => item.DrawerCount)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.desktopMaterial)
+                @Html.DisplayFor(modelItem => item.DesktopMaterial)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.quoteDate)
+                @Html.DisplayFor(modelItem => item.QuoteDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.RushDays)

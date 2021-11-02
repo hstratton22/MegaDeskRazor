@@ -16,7 +16,7 @@ namespace RazorMegaDesk.Migrations
                     Width = table.Column<int>(type: "int", nullable: false),
                     Depth = table.Column<int>(type: "int", nullable: false),
                     DrawerCount = table.Column<int>(type: "int", nullable: false),
-                    desktopMaterial = table.Column<int>(type: "int", nullable: false)
+                    DesktopMaterial = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

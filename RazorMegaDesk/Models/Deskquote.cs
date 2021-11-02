@@ -23,7 +23,7 @@ namespace RazorMegaDesk.Models
         public int Depth { get; set; }
         [DataType(DataType.Date)]
         [Display(Name = "Date")]
-        public DateTime quoteDate { get; set; }
+        public DateTime QuoteDate { get; set; }
         public int Area
         {
             //get { return _width * _depth; }
@@ -37,7 +37,7 @@ namespace RazorMegaDesk.Models
 
         [Required]
         [Display(Name = "Desktop Material"), EnumDataType(typeof(DesktopMaterial))]
-        public DesktopMaterial desktopMaterial { get; set; }
+        public DesktopMaterial DesktopMaterial { get; set; }
 
         [Display(Name = "Rush Shipping")]
         public int RushDays { get; set; }
@@ -51,6 +51,11 @@ namespace RazorMegaDesk.Models
             }
         }
 
+
+        public Deskquote()
+        {
+            QuoteDate = DateTime.Today;
+        }
 
         private int _rush;
         private int[,] rushShipping;
@@ -125,27 +130,27 @@ namespace RazorMegaDesk.Models
         /// <returns></returns>
         public int CalcSurfaceCost()
         {
-            if (desktopMaterial == DesktopMaterial.Laminate)
+            if (DesktopMaterial == DesktopMaterial.Laminate)
             {
                 return 100;
             }
 
-            if (desktopMaterial == DesktopMaterial.Oak)
+            if (DesktopMaterial == DesktopMaterial.Oak)
             {
                 return 200;
             }
 
-            if (desktopMaterial == DesktopMaterial.Pine)
+            if (DesktopMaterial == DesktopMaterial.Pine)
             {
                 return 50;
             }
 
-            if (desktopMaterial == DesktopMaterial.Rosewood)
+            if (DesktopMaterial == DesktopMaterial.Rosewood)
             {
                 return 300;
             }
 
-            if (desktopMaterial == DesktopMaterial.Veneer)
+            if (DesktopMaterial == DesktopMaterial.Veneer)
             {
                 return 125;
             }
