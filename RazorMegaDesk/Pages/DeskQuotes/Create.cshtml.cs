@@ -14,6 +14,7 @@ namespace RazorMegaDesk.Pages.DeskQuotes
     {
         private readonly RazorMegaDesk.Data.RazorMegaDeskContext _context;
 
+
         public CreateModel(RazorMegaDesk.Data.RazorMegaDeskContext context)
         {
             _context = context;
@@ -40,5 +41,7 @@ namespace RazorMegaDesk.Pages.DeskQuotes
 
             return RedirectToPage("./Index");
         }
+
+
     }
 }

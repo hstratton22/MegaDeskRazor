@@ -20,6 +20,8 @@ namespace RazorMegaDesk.Models
         [Range(12, 48)]
         [Required]
         public int Depth { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime quoteDate { get; set; }
         public int Area
         {
             //get { return _width * _depth; }

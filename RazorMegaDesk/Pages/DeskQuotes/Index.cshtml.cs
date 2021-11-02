@@ -20,9 +20,11 @@ namespace RazorMegaDesk.Pages.DeskQuotes
         }
 
         public IList<Deskquote> Deskquote { get;set; }
+        
 
         public async Task OnGetAsync()
         {
+           
             Deskquote = await _context.Deskquote.ToListAsync();
         }
     }
