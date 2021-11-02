@@ -24,7 +24,8 @@ namespace RazorMegaDesk.Pages.DeskQuotes
         public IList<Deskquote> Deskquote { get;set; }
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
-
+        public string DateSort { get; set; }
+        public string NameSort { get; set; }
 
         public async Task OnGetAsync()
         {
@@ -38,8 +39,6 @@ namespace RazorMegaDesk.Pages.DeskQuotes
             }
 
             Deskquote = await deskquotes.ToListAsync();
-
-       
            
         }
     }
