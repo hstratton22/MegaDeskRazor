@@ -13,6 +13,7 @@ namespace RazorMegaDesk.Models
         public int ID { get; set; }
         [StringLength(60, MinimumLength = 3)]
         [Required]
+        [Display(Name = "Name")]
         public string CustomerName { get; set; }
         [Range(24, 96)]
         [Required]
@@ -21,6 +22,7 @@ namespace RazorMegaDesk.Models
         [Required]
         public int Depth { get; set; }
         [DataType(DataType.Date)]
+        [Display(Name = "Date")]
         public DateTime quoteDate { get; set; }
         public int Area
         {
@@ -28,10 +30,12 @@ namespace RazorMegaDesk.Models
             get { return Width * Depth; }
         }
         [Range(0, 7)]
+        
         [Required]
+        [Display(Name = "Drawer Count")]
         public int DrawerCount { get; set; }
 
-        [EnumDataType(typeof(DesktopMaterial))]
+        [Display(Name = "Desktop Material"), EnumDataType(typeof(DesktopMaterial))]
         public DesktopMaterial desktopMaterial { get; set; }
 
         private int _rush;
