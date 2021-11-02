@@ -20,6 +20,11 @@
                 <span asp-validation-for="Deskquote.CustomerName" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Deskquote.quoteDate" class="control-label"></label>
+                <input asp-for="Deskquote.quoteDate" class="form-control" />
+                <span asp-validation-for="Deskquote.quoteDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Deskquote.Width" class="control-label"></label>
                 <input asp-for="Deskquote.Width" class="form-control" />
                 <span asp-validation-for="Deskquote.Width" class="text-danger"></span>
@@ -39,6 +44,16 @@
                 <select asp-for="Deskquote.desktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
                 </select>
                 <span asp-validation-for="Deskquote.desktopMaterial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Deskquote.RushDays" class="control-label">Rush Shipping?</label>
+                <select asp-for="Deskquote.RushDays" class="form-control">
+                    <option value="0">Free Standard Shipping</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                </select>
+                <span asp-validation-for="Deskquote.RushDays" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
