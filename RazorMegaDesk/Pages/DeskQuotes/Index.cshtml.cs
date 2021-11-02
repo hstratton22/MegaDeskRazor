@@ -9,7 +9,6 @@ using RazorMegaDesk.Data;
 using RazorMegaDesk.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-
 namespace RazorMegaDesk.Pages.DeskQuotes
 {
     public class IndexModel : PageModel
@@ -27,18 +26,43 @@ namespace RazorMegaDesk.Pages.DeskQuotes
         public string DateSort { get; set; }
         public string NameSort { get; set; }
 
-        public async Task OnGetAsync()
+        public string CurrentFilter { get; set; }
+
+
+        public async Task OnGetAsync(string sortOrder, string searchString)
         {
 
-            var deskquotes = from d in _context.Deskquote
-                            select d;
+            NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            DateSort = sortOrder == "Date" ? "date_desc" : "Date";
 
-            if (!string.IsNullOrEmpty(SearchString))
+            CurrentFilter = searchString;
+
+            IQueryable<Deskquote> deskquoteIQ = from d in _context.Deskquote
+                                             select d;
+
+            if (!String.IsNullOrEmpty(searchString))
             {
-                deskquotes = deskquotes.Where(s => s.CustomerName.Contains(SearchString));
+                deskquoteIQ = deskquoteIQ.Where(s => s.CustomerName.Contains(searchString));
             }
 
-            Deskquote = await deskquotes.ToListAsync();
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    deskquoteIQ = deskquoteIQ.OrderByDescending(s => s.CustomerName);
+                    break;
+                case "Date":
+                    deskquoteIQ = deskquoteIQ.OrderBy(s => s.quoteDate);
+                    break;
+                case "date_desc":
+                    deskquoteIQ = deskquoteIQ.OrderByDescending(s => s.quoteDate);
+                    break;
+                default:
+                    deskquoteIQ = deskquoteIQ.OrderBy(s => s.CustomerName);
+                    break;
+            }
+
+
+            Deskquote = await deskquoteIQ.AsNoTracking().ToListAsync();
            
         }
     }

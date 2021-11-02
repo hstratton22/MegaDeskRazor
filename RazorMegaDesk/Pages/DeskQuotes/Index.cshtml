@@ -10,17 +10,25 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-<form>
-    <p>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
+
+<form asp-page="./Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name:
+            <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn btn-primary" /> |
+            <a asp-page="./Index">Back to full List</a>
+        </p>
+    </div>
 </form>
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Deskquote[0].CustomerName)
+            <th class="col-1">
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                    @Html.DisplayNameFor(model => model.Deskquote[0].CustomerName)
+                </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Deskquote[0].Width)
@@ -33,6 +41,11 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Deskquote[0].desktopMaterial)
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
+                    @Html.DisplayNameFor(model => model.Deskquote[0].quoteDate)
+                </a>
             </th>
             <th></th>
         </tr>
