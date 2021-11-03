@@ -30,27 +30,13 @@
                         @Html.DisplayNameFor(model => model.Deskquote[0].CustomerName)
                     </a>
                 </th>
-                <!--<th>
-        @*@Html.DisplayNameFor(model => model.Deskquote[0].Width)*@
-    </th>
-    <th>
-       @* @Html.DisplayNameFor(model => model.Deskquote[0].Depth)*@
-    </th>
-    <th>
-        @*@Html.DisplayNameFor(model => model.Deskquote[0].DrawerCount)*@
-    </th>
-    <th>
-        @*@Html.DisplayNameFor(model => model.Deskquote[0].DesktopMaterial)*@
-    </th>-->
-
+                
                 <th>
                     <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
                         @Html.DisplayNameFor(model => model.Deskquote[0].QuoteDate)
                     </a>
                 </th>
-                <!--<th>
-        @*@Html.DisplayNameFor(model => model.Deskquote[0].RushDays)*@
-    </th>-->
+                
                 <th>
                     @Html.DisplayNameFor(model => model.Deskquote[0].Cost)
                 </th>
@@ -66,24 +52,11 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.CustomerName)
                 </td>
-                <!--<td>
-        @Html.DisplayFor(modelItem => item.Width)
-    </td>
-    <td>
-        @*@Html.DisplayFor(modelItem => item.Depth)*@
-    </td>
-    <td>
-        @*@Html.DisplayFor(modelItem => item.DrawerCount)*@
-    </td>
-    <td>
-        @*@Html.DisplayFor(modelItem => item.DesktopMaterial)*@
-    </td>-->
+               
                 <td>
                     @Html.DisplayFor(modelItem => item.QuoteDate)
                 </td>
-                <!--<td>
-        @*@Html.DisplayFor(modelItem => item.RushDays)*@
-    </td>-->
+                
                 <td>
                     $@Html.DisplayFor(modelItem => item.Cost)
                 </td>

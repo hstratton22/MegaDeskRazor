@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc;
 using System.IO;
 
 namespace RazorMegaDesk.Models
@@ -26,7 +22,7 @@ namespace RazorMegaDesk.Models
         public DateTime QuoteDate { get; set; }
         public int Area
         {
-            //get { return _width * _depth; }
+            
             get { return Width * Depth; }
         }
         [Range(0, 7)]
