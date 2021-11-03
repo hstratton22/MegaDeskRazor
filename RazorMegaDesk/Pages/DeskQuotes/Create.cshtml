@@ -56,11 +56,15 @@
     <div class="form-row">
         <div class="col-md-4 mb-3">
             <label asp-for="Deskquote.DesktopMaterial" class="control-label">Desktop Material</label><br />
-            <select asp-for="Deskquote.DesktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
+            <select id="materialDropdown" asp-for="Deskquote.DesktopMaterial" asp-items="Html.GetEnumSelectList<Models.DesktopMaterial>()" class="form-control">
             </select>
             <span asp-validation-for="Deskquote.DesktopMaterial" class="text-danger"></span>
         </div>
-       
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-6"></div>
+        <img id="materialImage" src="~/Images/laminate.png" alt="Laminate" />
     </div>
 
     <div class="form-row mb-3">
@@ -77,4 +81,31 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script type="text/javascript">
+        const materialDropdown = document.getElementById("materialDropdown");
+        const image = document.getElementById("materialImage");
+        materialDropdown.addEventListener("change", (event) => {
+            const material = event.target.value
+            if (material == 0) {
+                materialImage.src = "/Images/laminate.png";
+                materialImage.alt = "Laminate";
+            }
+            if (material == 1) {
+                materialImage.src = "/Images/oak.jpg";
+                materialImage.alt = "Oak";
+            }
+            if (material == 2) {
+                materialImage.src = "/Images/pine.jpg";
+                materialImage.alt = "Pine";
+            }
+            if (material == 3) {
+                materialImage.src = "/Images/rosewood.jpg";
+                materialImage.alt = "Rosewood";
+            }
+            if (material == 4) {
+                materialImage.src = "/Images/veneer.jpg";
+                materialImage.alt = "Veneer";
+            }
+        })
+    </script>
 }
