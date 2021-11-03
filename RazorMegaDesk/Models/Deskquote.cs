@@ -32,11 +32,11 @@ namespace RazorMegaDesk.Models
         [Range(0, 7)]
         
         [Required]
-        [Display(Name = "Drawer Count")]
+        [Display(Name = "Drawers")]
         public int DrawerCount { get; set; }
 
         [Required]
-        [Display(Name = "Desktop Material"), EnumDataType(typeof(DesktopMaterial))]
+        [Display(Name = "Desktop"), EnumDataType(typeof(DesktopMaterial))]
         public DesktopMaterial DesktopMaterial { get; set; }
 
         [Display(Name = "Rush Shipping")]
