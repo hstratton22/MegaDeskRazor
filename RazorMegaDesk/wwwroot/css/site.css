@@ -81,6 +81,10 @@ body {
 .btn {
     padding:.25rem;
 }
+.swatch {
+    width: 200px;
+    margin-bottom:.5rem;
+}
 
 
 
