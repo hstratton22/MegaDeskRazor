@@ -20,9 +20,18 @@ namespace SacramentPlanner.Controllers
         }
 
         // GET: Plans
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Plan.ToListAsync());
+            var plans = from m in _context.Plan
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                plans = plans.Where(s => s.SpeakerSubjects!.Contains(searchString));
+            }
+
+            return View(await plans.ToListAsync());
+            //return View(await _context.Plan.ToListAsync());
         }
 
         // GET: Plans/Details/5
