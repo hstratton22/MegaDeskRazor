@@ -273,6 +273,293 @@ namespace SacramentPlanner.Models
                         {
                             Num = 50,
                             Name = "Come, Thou Glorious Day of Promise"
+                        },
+                        new Hymns
+                        {
+                            Num = 51,
+                            Name = "Sons of Michael, He Approaches"
+                        }, new Hymns
+                        {
+                            Num = 52,
+                            Name = "The Day Dawn is Breaking"
+                        }, new Hymns
+                        {
+                            Num = 53,
+                            Name = "Let Earth's Inhabitants Rejoice"
+                        }, new Hymns
+                        {
+                            Num = 54,
+                            Name = "Behold, the Mountain of the Lord"
+                        }, new Hymns
+                        {
+                            Num = 55,
+                            Name = "Lo, the Mighty God Appearing!"
+                        }, new Hymns
+                        {
+                            Num = 56,
+                            Name = "Softly Beams the Sacred Dawning"
+                        }, new Hymns
+                        {
+                            Num = 57,
+                            Name = "We're Not Ashamed to Own Our Lord"
+                        }, new Hymns
+                        {
+                            Num = 58,
+                            Name = "Come, Ye Children of the Lord"
+                        }, new Hymns
+                        {
+                            Num = 59,
+                            Name = "Come, Oh Thou King of Kings"
+                        }, new Hymns
+                        {
+                            Num = 60,
+                            Name = "Battle Hymn of the Republic"
+                        },
+                        new Hymns
+                        {
+                            Num = 61,
+                            Name = "Raise Your Voices to the Lord"
+                        }, new Hymns
+                        {
+                            Num = 62,
+                            Name = "All Creatures of our God and King"
+                        }, new Hymns
+                        {
+                            Num = 63,
+                            Name = "Great King of Heaven"
+                        }, new Hymns
+                        {
+                            Num = 64,
+                            Name = "On This Day of Joy and Gladness"
+                        }, new Hymns
+                        {
+                            Num = 65,
+                            Name = "Come, All Ye Saints Who Dwell on Earth"
+                        }, new Hymns
+                        {
+                            Num = 66,
+                            Name = "Rejoice, the Lord is King!"
+                        }, new Hymns
+                        {
+                            Num = 67,
+                            Name = "Glory to God on High"
+                        }, new Hymns
+                        {
+                            Num = 68,
+                            Name = "A Mighty Fortress is Our God"
+                        }, new Hymns
+                        {
+                            Num = 69,
+                            Name = "All Glory Laud and Honor"
+                        }, new Hymns
+                        {
+                            Num = 70,
+                            Name = "Sing Praise to Him"
+                        },
+                        new Hymns
+                        {
+                            Num = 71,
+                            Name = "With Songs of Praise"
+                        }, new Hymns
+                        {
+                            Num = 72,
+                            Name = "Praise to the Lord, the Almighty"
+                        }, new Hymns
+                        {
+                            Num = 73,
+                            Name = "Praise the Lord with Heart and Voice"
+                        }, new Hymns
+                        {
+                            Num = 74,
+                            Name = "Praise Ye the Lord"
+                        }, new Hymns
+                        {
+                            Num = 75,
+                            Name = "In Hymns of Praise"
+                        }, new Hymns
+                        {
+                            Num = 76,
+                            Name = "God of Our Father's We Come Unto Thee"
+                        }, new Hymns
+                        {
+                            Num = 77,
+                            Name = "Great is the Lord"
+                        }, new Hymns
+                        {
+                            Num = 78,
+                            Name = "God of Our Fathers, We Come Unto Thee"
+                        }, new Hymns
+                        {
+                            Num = 79,
+                            Name = "With All the Power of Heart and Tongue"
+                        }, new Hymns
+                        {
+                            Num = 80,
+                            Name = "God of Our Fathers, Known of Old"
+                        },
+                        new Hymns
+                        {
+                            Num = 81,
+                            Name = "Press Forward, Saints"
+                        }, new Hymns
+                        {
+                            Num = 82,
+                            Name = "For All the Saints"
+                        }, new Hymns
+                        {
+                            Num = 83,
+                            Name = "Guide Us, O Thou Great Jehovah"
+                        }, new Hymns
+                        {
+                            Num = 84,
+                            Name = "Faith of Our Fathers"
+                        }, new Hymns
+                        {
+                            Num = 85,
+                            Name = "How Firm a Foundation"
+                        }, new Hymns
+                        {
+                            Num = 86,
+                            Name = "How Great Thou Art"
+                        }, new Hymns
+                        {
+                            Num = 87,
+                            Name = "God is Love"
+                        }, new Hymns
+                        {
+                            Num = 88,
+                            Name = "Great God, Attend While Zion Sings"
+                        }, new Hymns
+                        {
+                            Num = 89,
+                            Name = "The Lord is My Light"
+                        }, new Hymns
+                        {
+                            Num = 90,
+                            Name = "From All That Dwell below the Skies"
+                        },
+                        new Hymns
+                        {
+                            Num = 91,
+                            Name = "Father, Thy Children to Thee Now Raise"
+                        }, new Hymns
+                        {
+                            Num = 92,
+                            Name = "For the Beauty of the Earth"
+                        }, new Hymns
+                        {
+                            Num = 93,
+                            Name = "Prayer of Thanksgiving"
+                        }, new Hymns
+                        {
+                            Num = 94,
+                            Name = "Come, Ye Thankful People"
+                        }, new Hymns
+                        {
+                            Num = 95,
+                            Name = "Now Thank We All Our God"
+                        }, new Hymns
+                        {
+                            Num = 96,
+                            Name = "Dearest Children, God Is Near You"
+                        }, new Hymns
+                        {
+                            Num = 97,
+                            Name = "Lead, Kindly Light"
+                        }, new Hymns
+                        {
+                            Num = 98,
+                            Name = "I Need Thee Every Hour"
+                        }, new Hymns
+                        {
+                            Num = 99,
+                            Name = "Nearer, Dear Savior, to Thee"
+                        }, new Hymns
+                        {
+                            Num = 100,
+                            Name = "Nearer, My God, to Thee"
+                        },
+                        new Hymns
+                        {
+                            Num = 101,
+                            Name = "Guide Me to Thee"
+                        }, new Hymns
+                        {
+                            Num = 102,
+                            Name = "Jesus, Lover of My Soul"
+                        }, new Hymns
+                        {
+                            Num = 103,
+                            Name = "Precious Savior, Dear Redeemer"
+                        }, new Hymns
+                        {
+                            Num = 104,
+                            Name = "Jesus, Savior, Pilot Me"
+                        }, new Hymns
+                        {
+                            Num = 105,
+                            Name = "Master, the Tempest is Raging"
+                        }, new Hymns
+                        {
+                            Num = 106,
+                            Name = "God Speed the Right"
+                        }, new Hymns
+                        {
+                            Num = 107,
+                            Name = "Lord, Accept Our True Devotion"
+                        }, new Hymns
+                        {
+                            Num = 108,
+                            Name = "The Lord is My Shepherd"
+                        }, new Hymns
+                        {
+                            Num = 109,
+                            Name = "The Lord My Pastrue Will Prepare"
+                        }, new Hymns
+                        {
+                            Num = 110,
+                            Name = "Cast Thy Burden upon the Lord"
+                        },
+                        new Hymns
+                        {
+                            Num = 111,
+                            Name = "Rock of Ages"
+                        }, new Hymns
+                        {
+                            Num = 112,
+                            Name = "Savior, Redeemer of My Soul"
+                        }, new Hymns
+                        {
+                            Num = 113,
+                            Name = "Our Savior's Love"
+                        }, new Hymns
+                        {
+                            Num = 114,
+                            Name = "Come Unto Him"
+                        }, new Hymns
+                        {
+                            Num = 115,
+                            Name = "Come, Ye Disconsolate"
+                        }, new Hymns
+                        {
+                            Num = 116,
+                            Name = "Come, Follow Me"
+                        }, new Hymns
+                        {
+                            Num = 117,
+                            Name = "Come unto Jesus"
+                        }, new Hymns
+                        {
+                            Num = 118,
+                            Name = "Ye Simple Souls Who Stray"
+                        }, new Hymns
+                        {
+                            Num = 119,
+                            Name = "Come, We That Love the Lord"
+                        }, new Hymns
+                        {
+                            Num = 120,
+                            Name = "Lean on My Ample Arm"
                         }
 
                         );
