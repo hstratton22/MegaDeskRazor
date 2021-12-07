@@ -945,6 +945,506 @@ namespace SacramentPlanner.Models
                         {
                             Num = 216,
                             Name = "We are Sowing"
+                        }, new Hymns
+                        {
+                            Num = 217,
+                            Name = "Come, Let Us Anew"
+                        }, new Hymns
+                        {
+                            Num = 218,
+                            Name = "We Give Thee But Thine Own"
+                        }, new Hymns
+                        {
+                            Num = 219,
+                            Name = "Because I Have Been Given Much"
+                        }, new Hymns
+                        {
+                            Num = 220,
+                            Name = "Lord, I Would Follow Thee"
+                        }, new Hymns
+                        {
+                            Num = 221,
+                            Name = "Dear to the Heart of Shepherd"
+                        }, new Hymns
+                        {
+                            Num = 222,
+                            Name = "Hear Thou Our Hymn, O Lord"
+                        }, new Hymns
+                        {
+                            Num = 223,
+                            Name = "Have I Done Any Good?"
+                        }, new Hymns
+                        {
+                            Num = 224,
+                            Name = "I Have Work Enough to Do"
+                        }, new Hymns
+                        {
+                            Num = 225,
+                            Name = "We Are Marching On to Glory"
+                        }, new Hymns
+                        {
+                            Num = 226,
+                            Name = "Improve the Shining Moments"
+                        }, new Hymns
+                        {
+                            Num = 227,
+                            Name = "There Is Sunshine in My Soul Today"
+                        }, new Hymns
+                        {
+                            Num = 228,
+                            Name = "You Can Make the Pathway Bright"
+                        }, new Hymns
+                        {
+                            Num = 229,
+                            Name = "Today, While the Sun Shines"
+                        }, new Hymns
+                        {
+                            Num = 230,
+                            Name = "Scatter Sunshine"
+                        }, new Hymns
+                        {
+                            Num = 231,
+                            Name = "Father, Cheer Our Souls Tonight"
+                        }, new Hymns
+                        {
+                            Num = 232,
+                            Name = "Let Us Oft Speak Kind Words"
+                        }, new Hymns
+                        {
+                            Num = 233,
+                            Name = "Nay, Speak No Ill"
+                        }, new Hymns
+                        {
+                            Num = 234,
+                            Name = "Jesus, Mighty King in Zion"
+                        }, new Hymns
+                        {
+                            Num = 235,
+                            Name = "Should You Feel Inclined to Censure"
+                        }, new Hymns
+                        {
+                            Num = 236,
+                            Name = "Lord, Accept into Thy Kingdom"
+                        }, new Hymns
+                        {
+                            Num = 237,
+                            Name = "Do What is Right"
+                        }, new Hymns
+                        {
+                            Num = 238,
+                            Name = "Behold Thy Sons and Daughters, Lord"
+                        }, new Hymns
+                        {
+                            Num = 239,
+                            Name = "Choose the Right"
+                        }, new Hymns
+                        {
+                            Num = 240,
+                            Name = "Know This, That Every Soul is Free"
+                        }, new Hymns
+                        {
+                            Num = 241,
+                            Name = "Count Your Blessings"
+                        }, new Hymns
+                        {
+                            Num = 242,
+                            Name = "Praise God, from Whom All Blessings Flow"
+                        }, new Hymns
+                        {
+                            Num = 243,
+                            Name = "Let Us All Press On"
+                        }, new Hymns
+                        {
+                            Num = 244,
+                            Name = "Come Along, Come Along"
+                        }, new Hymns
+                        {
+                            Num = 245,
+                            Name = "This House We Dedicate to Thee"
+                        }, new Hymns
+                        {
+                            Num = 246,
+                            Name = "Onward, Christian Soldiers"
+                        }, new Hymns
+                        {
+                            Num = 247,
+                            Name = "We Love Thy House, O God"
+                        }, new Hymns
+                        {
+                            Num = 248,
+                            Name = "Up, Awake, Ye Defenders of Zion"
+                        }, new Hymns
+                        {
+                            Num = 249,
+                            Name = "Called to Serve"
+                        }, new Hymns
+                        {
+                            Num = 250,
+                            Name = "We Are All Enlisted"
+                        }, new Hymns
+                        {
+                            Num = 251,
+                            Name = "Behold! A Royal Army"
+                        }, new Hymns
+                        {
+                            Num = 252,
+                            Name = "Put Your Shoulder to the Wheel"
+                        }, new Hymns
+                        {
+                            Num = 253,
+                            Name = "Like Ten Thousand Legions Marching"
+                        }, new Hymns
+                        {
+                            Num = 254,
+                            Name = "True to the Faith"
+                        }, new Hymns
+                        {
+                            Num = 255,
+                            Name = "Carry On"
+                        }, new Hymns
+                        {
+                            Num = 256,
+                            Name = "As Zion's Youth in Latter Days"
+                        }, new Hymns
+                        {
+                            Num = 257,
+                            Name = "Rejoice! A Glorious Sound is Heard"
+                        }, new Hymns
+                        {
+                            Num = 258,
+                            Name = "O Thou Rock of Our Salvation"
+                        }, new Hymns
+                        {
+                            Num = 259,
+                            Name = "Hope of Israel"
+                        }, new Hymns
+                        {
+                            Num = 260,
+                            Name = "Who's on the Lord's Side?"
+                        }, new Hymns
+                        {
+                            Num = 261,
+                            Name = "Thy Servants Are Prepared"
+                        }, new Hymns
+                        {
+                            Num = 262,
+                            Name = "Go, Ye Messengers of Glory"
+                        }, new Hymns
+                        {
+                            Num = 263,
+                            Name = "Go Forth with Faith"
+                        }, new Hymns
+                        {
+                            Num = 264,
+                            Name = "Hark, All Ye Nations!"
+                        }, new Hymns
+                        {
+                            Num = 265,
+                            Name = "Arise, O God, and Shine"
+                        }, new Hymns
+                        {
+                            Num = 266,
+                            Name = "The Time is Far Spent"
+                        }, new Hymns
+                        {
+                            Num = 267,
+                            Name = "How Wonderous and Great"
+                        }, new Hymns
+                        {
+                            Num = 268,
+                            Name = "Come, All Whose Souls Are Lighted"
+                        }, new Hymns
+                        {
+                            Num = 269,
+                            Name = "Johovah, Lord of Heaven and Earth"
+                        }, new Hymns
+                        {
+                            Num = 270,
+                            Name = "I'll Go Where You Want Me to Go"
+                        }, new Hymns
+                        {
+                            Num = 271,
+                            Name = "Oh, Holy Words of Truth and Love"
+                        }, new Hymns
+                        {
+                            Num = 272,
+                            Name = "Oh Say, What is Truth?"
+                        }, new Hymns
+                        {
+                            Num = 273,
+                            Name = "Truth Reflects Upon Our Senses"
+                        }, new Hymns
+                        {
+                            Num = 274,
+                            Name = "The Iron Rod"
+                        }, new Hymns
+                        {
+                            Num = 275,
+                            Name = "Men Are That They Might Have Joy"
+                        }, new Hymns
+                        {
+                            Num = 276,
+                            Name = "Come Away to the Sunday School"
+                        }, new Hymns
+                        {
+                            Num = 277,
+                            Name = "As I Search the Holy Scriptures"
+                        }, new Hymns
+                        {
+                            Num = 278,
+                            Name = "Thanks for the Sabbath School"
+                        }, new Hymns
+                        {
+                            Num = 279,
+                            Name = "Thy Holy Word"
+                        }, new Hymns
+                        {
+                            Num = 280,
+                            Name = "Welcome, Welcome, Sabbath Morning"
+                        }, new Hymns
+                        {
+                            Num = 281,
+                            Name = "Help Me Teach with Inspiration"
+                        }, new Hymns
+                        {
+                            Num = 282,
+                            Name = "We Meet Again in Sabbath School"
+                        }, new Hymns
+                        {
+                            Num = 283,
+                            Name = "The Glorious Gospel Light Has Shone"
+                        }, new Hymns
+                        {
+                            Num = 284,
+                            Name = "If You Could Hie to Kolob"
+                        }, new Hymns
+                        {
+                            Num = 285,
+                            Name = "God Moves in a Mysterious Way"
+                        }, new Hymns
+                        {
+                            Num = 286,
+                            Name = "Oh, What Songs of the Heart"
+                        }, new Hymns
+                        {
+                            Num = 287,
+                            Name = "Rise, Ye Saints, and Temples Enter"
+                        }, new Hymns
+                        {
+                            Num = 288,
+                            Name = "How Beautiful Thy Temples, Lord"
+                        }, new Hymns
+                        {
+                            Num = 289,
+                            Name = "Holy Temples on Mount Zion"
+                        }, new Hymns
+                        {
+                            Num = 290,
+                            Name = "Rejpoice, Ye Saints of Latter Days"
+                        }, new Hymns
+                        {
+                            Num = 291,
+                            Name = "Turn Your Hearts"
+                        }, new Hymns
+                        {
+                            Num = 292,
+                            Name = "O My Father"
+                        }, new Hymns
+                        {
+                            Num = 293,
+                            Name = "Each Life That Touches Ours for Good"
+                        }, new Hymns
+                        {
+                            Num = 294,
+                            Name = "Love at Home"
+                        }, new Hymns
+                        {
+                            Num = 295,
+                            Name = "O Love That Glorifies the Son"
+                        }, new Hymns
+                        {
+                            Num = 296,
+                            Name = "Our Father, by Whose Name"
+                        }, new Hymns
+                        {
+                            Num = 297,
+                            Name = "From Home of Saints Glad Songs Arise"
+                        }, new Hymns
+                        {
+                            Num = 298,
+                            Name = "Home Can Be a Heaven on Earth"
+                        }, new Hymns
+                        {
+                            Num = 299,
+                            Name = "Children of Our Heavenly Father"
+                        }, new Hymns
+                        {
+                            Num = 300,
+                            Name = "Familes Can Be Together Forever"
+                        }, new Hymns
+                        {
+                            Num = 301,
+                            Name = "I Am a Child of God"
+                        }, new Hymns
+                        {
+                            Num = 302,
+                            Name = "I Know My Father Lives"
+                        }, new Hymns
+                        {
+                            Num = 303,
+                            Name = "Keep the Commandments"
+                        }, new Hymns
+                        {
+                            Num = 304,
+                            Name = "Teach Me to Walk in the LIght"
+                        }, new Hymns
+                        {
+                            Num = 305,
+                            Name = "The Light Devine"
+                        }, new Hymns
+                        {
+                            Num = 306,
+                            Name = "God's Daily Care"
+                        }, new Hymns
+                        {
+                            Num = 307,
+                            Name = "In Our Lovely Deseret"
+                        }, new Hymns
+                        {
+                            Num = 308,
+                            Name = "Love One Another"
+                        }, new Hymns
+                        {
+                            Num = 309,
+                            Name = "As Sisters in Zion (Women)"
+                        }, new Hymns
+                        {
+                            Num = 310,
+                            Name = "A Key Was Turned in Latter Days (Women)"
+                        }, new Hymns
+                        {
+                            Num = 311,
+                            Name = "We Meet Again as Sisters (Women)"
+                        }, new Hymns
+                        {
+                            Num = 312,
+                            Name = "We ever Pray for thee (Women)"
+                        }, new Hymns
+                        {
+                            Num = 313,
+                            Name = "God is Love (Women)"
+                        }, new Hymns
+                        {
+                            Num = 314,
+                            Name = "How Gentle God's Commandments (Women)"
+                        }, new Hymns
+                        {
+                            Num = 315,
+                            Name = "Jesus, the Very Thought of Thee (Women)"
+                        }, new Hymns
+                        {
+                            Num = 316,
+                            Name = "The Lord is My Shepherd"
+                        }, new Hymns
+                        {
+                            Num = 317,
+                            Name = "Sweet is the Work (Women)"
+                        }, new Hymns
+                        {
+                            Num = 318,
+                            Name = "Love at Home"
+                        }, new Hymns
+                        {
+                            Num = 319,
+                            Name = "Ye Elders of Israel"
+                        }, new Hymns
+                        {
+                            Num = 320,
+                            Name = "The Priesthood of Our Lord"
+                        }, new Hymns
+                        {
+                            Num = 321,
+                            Name = "Ye Who Are Called to Labor (Men)"
+                        }, new Hymns
+                        {
+                            Num = 322,
+                            Name = "Come, All Ye Sons of God (Men)"
+                        }, new Hymns
+                        {
+                            Num = 323,
+                            Name = "Rise Up, O Men of God (Men)"
+                        }, new Hymns
+                        {
+                            Num = 324,
+                            Name = "Rise Up, O Men of God (Men)"
+                        }, new Hymns
+                        {
+                            Num = 325,
+                            Name = "See the Mighty Priesthood Gathered (Men)"
+                        }, new Hymns
+                        {
+                            Num = 326,
+                            Name = "Come, Come, Ye Saints"
+                        }, new Hymns
+                        {
+                            Num = 327,
+                            Name = "Go, Ye Messengers of Heaven (Men)"
+                        }, new Hymns
+                        {
+                            Num = 328,
+                            Name = "An Angel From on High"
+                        }, new Hymns
+                        {
+                            Num = 329,
+                            Name = "Thy Servants Are Prepared (Men)"
+                        }, new Hymns
+                        {
+                            Num = 330,
+                            Name = "See, the Mighty Angel Flying (Men)"
+                        }, new Hymns
+                        {
+                            Num = 331,
+                            Name = "Oh Say, What is Truth? (Men)"
+                        }, new Hymns
+                        {
+                            Num = 332,
+                            Name = "Come, O Thou King of Kings (Men)"
+                        }, new Hymns
+                        {
+                            Num = 333,
+                            Name = "High on the Mountain Top"
+                        }, new Hymns
+                        {
+                            Num = 334,
+                            Name = "I Need Thee Every Hour (Men)"
+                        }, new Hymns
+                        {
+                            Num = 335,
+                            Name = "Brightly Beams Our Father's Mercy (Men)"
+                        }, new Hymns
+                        {
+                            Num = 336,
+                            Name = "School Thy Feelings (Men)"
+                        }, new Hymns
+                        {
+                            Num = 337,
+                            Name = "O Home Beloved (Men)"
+                        }, new Hymns
+                        {
+                            Num = 338,
+                            Name = "America the Beautiful"
+                        }, new Hymns
+                        {
+                            Num = 339,
+                            Name = "My Country, 'Tis of Thee"
+                        }, new Hymns
+                        {
+                            Num = 340,
+                            Name = "The Star-Spangled Banner"
+                        }, new Hymns
+                        {
+                            Num = 341,
+                            Name = "God Save the King"
                         }
 
                         );
