@@ -15,5 +15,7 @@ namespace SacramentPlanner.Data
         }
 
         public DbSet<SacramentPlanner.Models.Plan> Plan { get; set; }
+
+        public DbSet<SacramentPlanner.Models.Hymns> Hymns { get; set; }
     }
 }
