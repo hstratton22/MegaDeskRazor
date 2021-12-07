@@ -560,6 +560,167 @@ namespace SacramentPlanner.Models
                         {
                             Num = 120,
                             Name = "Lean on My Ample Arm"
+                        }, new Hymns
+                        {
+                            Num = 121,
+                            Name = "I'm A Pilgrim, I'm a Stranger"
+                        }, new Hymns
+                        {
+                            Num = 122,
+                            Name = "Though Deepening Trials"
+                        }, new Hymns
+                        {
+                            Num = 123,
+                            Name = "Oh, May My Soul Commune with Thee"
+                        }, new Hymns
+                        {
+                            Num = 124,
+                            Name = "Be Still, My Soul"
+                        }, new Hymns
+                        {
+                            Num = 125,
+                            Name = "How Gentle God's Commands"
+                        }, new Hymns
+                        {
+                            Num = 126,
+                            Name = "How Long, O Lord Most Holy and True"
+                        }, new Hymns
+                        {
+                            Num = 127,
+                            Name = "Does the Journey Seem Long?"
+                        }, new Hymns
+                        {
+                            Num = 128,
+                            Name = "When Faith Endures"
+                        }, new Hymns
+                        {
+                            Num = 129,
+                            Name = "Where Can I Turn for Peace?"
+                        }, new Hymns
+                        {
+                            Num = 130,
+                            Name = "Be Thouh Humble"
+                        }, new Hymns
+                        {
+                            Num = 131,
+                            Name = "More Holiness Give Me"
+                        }, new Hymns
+                        {
+                            Num = 132,
+                            Name = "God Is in His Holy Temple"
+                        }, new Hymns
+                        {
+                            Num = 133,
+                            Name = "Father in Heaven"
+                        }, new Hymns
+                        {
+                            Num = 134,
+                            Name = "I Believe in Christ"
+                        }, new Hymns
+                        {
+                            Num = 135,
+                            Name = "My Redeemer Lives"
+                        }, new Hymns
+                        {
+                            Num = 136,
+                            Name = "I Know That My Redeemer Lives"
+                        }, new Hymns
+                        {
+                            Num = 137,
+                            Name = "Testimony"
+                        }, new Hymns
+                        {
+                            Num = 138,
+                            Name = "Bless Our Fast, We Pray"
+                        }, new Hymns
+                        {
+                            Num = 139,
+                            Name = "In Fasting We Approach Thee"
+                        }, new Hymns
+                        {
+                            Num = 140,
+                            Name = "Did You Think to Pray?"
+                        }, new Hymns
+                        {
+                            Num = 141,
+                            Name = "Jesus, the Very Though of Thee"
+                        }, new Hymns
+                        {
+                            Num = 142,
+                            Name = "Sweet Hour of Prayer"
+                        }, new Hymns
+                        {
+                            Num = 143,
+                            Name = "Let the Holy Spirit Guide"
+                        }, new Hymns
+                        {
+                            Num = 144,
+                            Name = "Secret Prayer"
+                        }, new Hymns
+                        {
+                            Num = 145,
+                            Name = "Prayer is the Soul's Sincere Desire"
+                        }, new Hymns
+                        {
+                            Num = 146,
+                            Name = "Gently Raise the Sacred Strain"
+                        }, new Hymns
+                        {
+                            Num = 147,
+                            Name = "Sweet is the Work"
+                        }, new Hymns
+                        {
+                            Num = 148,
+                            Name = "Sabbath Day"
+                        }, new Hymns
+                        {
+                            Num = 149,
+                            Name = "As the Dew from Heaven Distilling"
+                        }, new Hymns
+                        {
+                            Num = 150,
+                            Name = "O Thou Kind and Gracious Father"
+                        }, new Hymns
+                        {
+                            Num = 151,
+                            Name = "We Meet, Dear Lord"
+                        }
+                        , new Hymns
+                        {
+                            Num = 152,
+                            Name = "God Be with You Till We Meet Again"
+                        }, new Hymns
+                        {
+                            Num = 153,
+                            Name = "Lord We Ask Thee Ere We Part"
+                        }, new Hymns
+                        {
+                            Num = 154,
+                            Name = "Father, This Hour Has Been One of Joy"
+                        }, new Hymns
+                        {
+                            Num = 155,
+                            Name = "We Have Partaken of Thy Love"
+                        }, new Hymns
+                        {
+                            Num = 156,
+                            Name = "Sing We Now at Parting"
+                        }, new Hymns
+                        {
+                            Num = 157,
+                            Name = "Thy Spirit, Lord, Has Stirred Our Souls"
+                        }, new Hymns
+                        {
+                            Num = 158,
+                            Name = "Before Thee, Lord, I Bow My Head"
+                        }, new Hymns
+                        {
+                            Num = 159,
+                            Name = "Now the Day is Over"
+                        }, new Hymns
+                        {
+                            Num = 160,
+                            Name = "Softly Now the Light of Day"
                         }
 
                         );
