@@ -721,6 +721,230 @@ namespace SacramentPlanner.Models
                         {
                             Num = 160,
                             Name = "Softly Now the Light of Day"
+                        }, new Hymns
+                        {
+                            Num = 161,
+                            Name = "The Lord Be with Us"
+                        }, new Hymns
+                        {
+                            Num = 162,
+                            Name = "Lord, We Come Before Thee Now"
+                        }, new Hymns
+                        {
+                            Num = 163,
+                            Name = "Lord, Dismiss Us with Thy Blessing"
+                        }, new Hymns
+                        {
+                            Num = 164,
+                            Name = "Great God, to Thee My Evening Song"
+                        }, new Hymns
+                        {
+                            Num = 165,
+                            Name = "Abide with Me; 'Tis Eventide"
+                        }, new Hymns
+                        {
+                            Num = 166,
+                            Name = "Abide with Me"
+                        }, new Hymns
+                        {
+                            Num = 167,
+                            Name = "Come, Let Us Sing an Evening Hymn"
+                        }, new Hymns
+                        {
+                            Num = 168,
+                            Name = "As the Shadows Fall"
+                        }, new Hymns
+                        {
+                            Num = 169,
+                            Name = "As Now We Take the Sacrament"
+                        }, new Hymns
+                        {
+                            Num = 170,
+                            Name = "God, Our Father, Hear Us Pray"
+                        }, new Hymns
+                        {
+                            Num = 171,
+                            Name = "With Humble Heart"
+                        }, new Hymns
+                        {
+                            Num = 172,
+                            Name = "In Humility, Our Savior"
+                        }, new Hymns
+                        {
+                            Num = 173,
+                            Name = "While of These Emblems We Partake"
+                        }, new Hymns
+                        {
+                            Num = 174,
+                            Name = "While of These Emblems We Partake"
+                        }, new Hymns
+                        {
+                            Num = 175,
+                            Name = "O God, the Eternal Father"
+                        }, new Hymns
+                        {
+                            Num = 176,
+                            Name = "'Tis Sweet to Sing the Matchless Love"
+                        }, new Hymns
+                        {
+                            Num = 177,
+                            Name = "'Tis Sweet to Sing the Matchless Love"
+                        }, new Hymns
+                        {
+                            Num = 178,
+                            Name = "O Lord of Hosts"
+                        }, new Hymns
+                        {
+                            Num = 179,
+                            Name = "Again, Our Dear Redeeming Lord"
+                        }, new Hymns
+                        {
+                            Num = 180,
+                            Name = "Father in Heaven, We Do Believe"
+                        }, new Hymns
+                        {
+                            Num = 181,
+                            Name = "Jesus of Nazareth, Savior and King"
+                        }, new Hymns
+                        {
+                            Num = 182,
+                            Name = "We'll Sing All Hail to Jesus' Name"
+                        }, new Hymns
+                        {
+                            Num = 183,
+                            Name = "In Rememberance of Thy Suffering"
+                        }, new Hymns
+                        {
+                            Num = 184,
+                            Name = "Upon the Cross of Calvary"
+                        }, new Hymns
+                        {
+                            Num = 185,
+                            Name = "Reverently and Meekly Now"
+                        }, new Hymns
+                        {
+                            Num = 186,
+                            Name = "Again We Meet around the Board"
+                        }, new Hymns
+                        {
+                            Num = 187,
+                            Name = "God Loved Us, So He Sent His Son"
+                        }, new Hymns
+                        {
+                            Num = 188,
+                            Name = "Thy Will, O Lord, Be Done"
+                        }, new Hymns
+                        {
+                            Num = 189,
+                            Name = "O Thou, Before the World Began"
+                        }, new Hymns
+                        {
+                            Num = 190,
+                            Name = "In Memory of the Crucified"
+                        }, new Hymns
+                        {
+                            Num = 191,
+                            Name = "Behold the Great Redeemer Die"
+                        }, new Hymns
+                        {
+                            Num = 192,
+                            Name = "He Died! The Great Redeemer Died"
+                        }, new Hymns
+                        {
+                            Num = 193,
+                            Name = "I Stand All Amazed"                            
+                        }, new Hymns
+                        {
+                            Num = 194,
+                            Name = "There is a Green Hill Far Away"
+                        }, new Hymns
+                        {
+                            Num = 195,
+                            Name = "How Great the Wisdom and the Love"
+                        }, new Hymns
+                        {
+                            Num = 196,
+                            Name = "Jesus, Once of Humble Birth"
+                        }, new Hymns
+                        {
+                            Num = 197,
+                            Name = "O Savior, Thou Who Wearest a Crown"
+                        }, new Hymns
+                        {
+                            Num = 198,
+                            Name = "That Easter Morn"
+                        }, new Hymns
+                        {
+                            Num = 199,
+                            Name = "He is Risen!"
+                        }, new Hymns
+                        {
+                            Num = 200,
+                            Name = "Christ the Lord is Risen Today"
+                        }, new Hymns
+                        {
+                            Num = 201,
+                            Name = "Joy to the World"
+                        }, new Hymns
+                        {
+                            Num = 202,
+                            Name = "Oh, Come All Ye Faithful"
+                        }, new Hymns
+                        {
+                            Num = 203,
+                            Name = "Angels We Have Heard on High"
+                        }, new Hymns
+                        {
+                            Num = 204,
+                            Name = "Silent Night"
+                        }, new Hymns
+                        {
+                            Num = 205,
+                            Name = "Once in Royal David's City"
+                        }, new Hymns
+                        {
+                            Num = 206,
+                            Name = "Away in a Manger"
+                        }, new Hymns
+                        {
+                            Num = 207,
+                            Name = "It Came Upon a Midnight Clear"
+                        }, new Hymns
+                        {
+                            Num = 208,
+                            Name = "O Little Town of Bethlehem"
+                        }, new Hymns
+                        {
+                            Num = 209,
+                            Name = "Hark! The Herald Angels Sing"
+                        }, new Hymns
+                        {
+                            Num = 210,
+                            Name = "With Wondering Awe"
+                        }, new Hymns
+                        {
+                            Num = 211,
+                            Name = "While Shepherd Watched Their Flocks"
+                        }, new Hymns
+                        {
+                            Num = 212,
+                            Name = "Far, Far Away on Judea's Plains"
+                        }, new Hymns
+                        {
+                            Num = 213,
+                            Name = "The First Noel"
+                        }, new Hymns
+                        {
+                            Num = 214,
+                            Name = "I Heard the Bells on Christmas Day"
+                        }, new Hymns
+                        {
+                            Num = 215,
+                            Name = "Ring Out, Wild Bells"
+                        }, new Hymns
+                        {
+                            Num = 216,
+                            Name = "We are Sowing"
                         }
 
                         );
