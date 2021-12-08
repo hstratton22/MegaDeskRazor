@@ -55,6 +55,7 @@ namespace SacramentPlanner.Controllers
         // GET: Plans/Create
         public IActionResult Create()
         {
+            PopulateHymnDropDownList();
             return View();
         }
 
@@ -87,6 +88,7 @@ namespace SacramentPlanner.Controllers
             {
                 return NotFound();
             }
+            PopulateHymnDropDownList();
             return View(plan);
         }
 
@@ -123,6 +125,24 @@ namespace SacramentPlanner.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(plan);
+        }
+
+        public void PopulateHymnDropDownList( object selectedHymn = null)
+        {
+
+            var hymnsQuery =
+                _context.Hymns.OrderBy(s=>s.Num)
+                .Select(s => new
+                {
+                    HymnID = s.Id,
+                    Description = s.Num + " - " + s.Name
+                })
+                .ToList();
+           // var hymnsQuery = from h in _context.Hymns
+                          //   orderby h.Num
+                          //   select h;
+
+            ViewBag.hymns = new SelectList(hymnsQuery, "HymnID" ,"Description", selectedHymn);
         }
 
         // GET: Plans/Delete/5

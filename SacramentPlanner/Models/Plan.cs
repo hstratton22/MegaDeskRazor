@@ -17,23 +17,21 @@ namespace SacramentPlanner.Models
         [Required]
         public string Conductor { get; set; }
         [Display(Name = "Opening Song")]
-        [Range(1, 341)]
+       
         [Required]
-        public int OpeningSong { get; set; }
+        public string OpeningSong { get; set; }
         [Display(Name = "Opening Prayer")]
         [Required]
         public string OpeningPrayer { get; set; }
         [Display(Name = "Sacrament Song")]
-        [Range(169, 196)]
         [Required]
-        public int SacramentSong { get; set; }
+        public string SacramentSong { get; set; }
         [Display(Name = "Intermediate Song")]
-        [Range(1, 341)]
-        public int? IntermediateSong { get; set; }
+  
+        public string? IntermediateSong { get; set; }
         [Display(Name = "Closing Song")]
-        [Range(1, 341)]
         [Required]
-        public int ClosingSong { get; set; }
+        public string ClosingSong { get; set; }
         [Display(Name = "Closing Prayer")]
         [Required]
         public string ClosingPrayer { get; set; }
