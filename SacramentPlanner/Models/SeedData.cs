@@ -25,7 +25,7 @@ namespace SacramentPlanner.Models
                         Conductor = "Bishop",
                         OpeningSong = "201 - Joy to the World",
                         OpeningPrayer = "John Doe",
-                        SacramentSong = "171 - With Hymble Heart",
+                        SacramentSong = "171 - With Humble Heart",
                         IntermediateSong = "212 - Far, Far Away on Judea's Plains",
                         ClosingSong = "206 - Away in a Manger",
                         ClosingPrayer = "Jane Doe",

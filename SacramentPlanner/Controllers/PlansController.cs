@@ -138,11 +138,8 @@ namespace SacramentPlanner.Controllers
                     Description = s.Num + " - " + s.Name
                 })
                 .ToList();
-           // var hymnsQuery = from h in _context.Hymns
-                          //   orderby h.Num
-                          //   select h;
 
-            ViewBag.hymns = new SelectList(hymnsQuery, "HymnID" ,"Description", selectedHymn);
+            ViewBag.hymns = new SelectList(hymnsQuery, "Description" ,"Description", selectedHymn);
         }
 
         // GET: Plans/Delete/5
