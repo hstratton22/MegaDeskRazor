@@ -19,8 +19,10 @@ namespace SacramentPlanner.Controllers
         }
 
         public IActionResult Index()
+
         {
-            return View();
+            return RedirectToAction("Index", "Plans");
+            //return View();
         }
 
         public IActionResult Privacy()
