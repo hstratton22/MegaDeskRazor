@@ -35,7 +35,7 @@ namespace SacramentPlanner.Models
         [Display(Name = "Closing Prayer")]
         [Required]
         public string ClosingPrayer { get; set; }
-        [Display(Name = "Speaker Subjects")]
+        [Display(Name = "Subject")]
         public string SpeakerSubjects { get; set; }
         [Display(Name = "Number Speakers")]
         public int NumberSpeakers { get; set; }
