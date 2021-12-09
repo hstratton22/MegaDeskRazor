@@ -22,10 +22,7 @@ namespace SacramentPlanner.Controllers
         // GET: Hymns
         public async Task<IActionResult> Index()
         {
-            var hymns = from h in _context.Hymns
-                         orderby h.Num
-                        select h;
-            return View(await hymns.ToListAsync());
+            return View(await _context.Hymns.ToListAsync());
         }
 
         // GET: Hymns/Details/5
