@@ -23,11 +23,12 @@ namespace SacramentPlanner.Controllers
         public async Task<IActionResult> Index(string searchWord)
         {
             var hymns = from m in _context.Hymns
+                        orderby m.Num
                          select m;
 
             if (!String.IsNullOrEmpty(searchWord))
             {
-                hymns = hymns.Where(s => s.Name.Contains(searchWord));
+                hymns = (IOrderedQueryable<Hymns>)hymns.Where(s => s.Name.Contains(searchWord));
             }
 
             return View(await hymns.ToListAsync());
