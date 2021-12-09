@@ -3,25 +3,22 @@
 @{
     ViewData["Title"] = "Sacrament Meeting Planner";
 }
+<section class="hero mt-xl-5">
+    <div class="jumbotron jumbotron-fluid" id="home">
+        <div class="container">
+            <h1 class="display-4 mt-5">Sacrament Meeting Planner</h1>
+            <a class="btn btn-outline-primary mt-2" asp-action="Create">Create New</a>
+            <form class="form-inline justify-content-center" asp-controller="Plans" asp-action="Index" method="get">
+                <div class="input-group">
+                    <input type="text" name="SearchString" />
+                    <input class="btn btn-primary my-2 my-sm-0" type="submit" value="Filter" />
+                </div>
+            </form>
+        </div>
 
-<h1 class="text-center mb-3 ">Sacrament Meeting Planner</h1>
+    </div>
+</section>
 
-<div class="pcard">
-
-    <form class="text-center mt-3 mb-3" asp-controller="Plans" asp-action="Index" method="get">
-
-        <a class="btn btn-primary float-start" asp-action="Create">Create New</a>
-        <span class="float-end mx-2">
-            Subject: <input type="text" name="SearchString" />
-            <input class="btn btn-primary mx-2" type="submit" value="Filter" />
-            <a class="btn btn-outline-primary" asp-action="Index">Back to Full List</a>
-        </span>
-
-    </form>
-
-</div>
-
-<hr />
 <div class="container pcard ">
     <div class="card-deck mt-2">
 
@@ -30,19 +27,21 @@
             <div class="card col-sm-6  custom-card">
                 <div class="card-body">
                     <h5 class="card-header text-center text-light"> @Html.DisplayFor(modelItem => item.Date)</h5>
-                    <p class="card-text"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :  @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
-                    <p class="card-text">This is where speaker names will go</p>
+                    <p class="card-text text-center"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :  @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
+                    <p class="card-text text-center">This is where speaker names will go</p>
                 </div>
-                <div class="card-footer text-center">
-                    <a asp-action="Edit" asp-route-id="@item.Id"><span class="badge bg-warning">Edit</span></a> |
-                    <a asp-action="Details" asp-route-id="@item.Id"><span class="badge bg-dark">Details</span></a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id"><span class="badge bg-danger">Delete</span></a>
+                <div class="card-footer">
+                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit me-5 text-center"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-info me-5 text-center"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="far fa-trash-alt me-5 text-center"></i></a>
                 </div>
             </div>
         }
 
     </div>
 </div>
+
+<a class="btn btn-outline-primary" asp-action="Index">Back to Full List</a>
 @*<table class="table">
     <thead>
         <tr>

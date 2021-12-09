@@ -1,5 +1,12 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+html, body {
+    font-family: 'Open Sans', sans-serif !important ;
+    color: #5F6876;
+    background-color: whitesmoke;
+}
 
 a.navbar-brand {
     white-space: normal;
@@ -7,9 +14,28 @@ a.navbar-brand {
     word-break: break-all;
 }
 
+i {
+    color: #C0C3C9;
+}
+
+td i {
+    color: darkgray;
+}
+
+section.hero {
+   margin-top: 100px;
+    min-height: 300px;
+    background-color: aliceblue;
+}
+
+#home {
+    margin-top: 50px;
+    text-align: center;
+}
+
 /* Provide sufficient contrast against white background */
 a {
-    color: #0366d6;
+    color: #C0C3C9;
 }
 
 /*.btn-primary {
@@ -30,9 +56,17 @@ html {
     font-size: 14px;
 }
 
+
 hr{
     margin-top: 2rem;
 }
+
+.card-footer {
+    border-top: none;
+    background-color: white;
+    padding: 0.5rem 0rem 0.5rem 4.5rem;
+}
+
 
 .pcard {
     padding-top: 1rem;
@@ -48,6 +82,20 @@ hr{
     
 }
 
+
+
+.form-group {
+    line-height: 35px;
+} 
+
+.card {
+    transition: box-shadow .3s;
+}
+
+    .card:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
+
 .card-deck .card {
         margin-bottom: 30px;
 }
@@ -61,12 +109,14 @@ hr{
     padding: 0;
 }
 
-.card-text {
-    padding: .5rem;
-}
 
+.card-text {
+    padding-right: .5rem;
+    padding-left: .5rem
+}
 .card-header {
-    background-color: #2C3E50;
+    background-color: slategrey;
+    color: white;
 }
 
 @media (min-width: 576px) {
@@ -88,6 +138,8 @@ hr{
             
             margin-left: 15px;
         }
+
+  
 }
 
 @media (min-width: 768px) {
