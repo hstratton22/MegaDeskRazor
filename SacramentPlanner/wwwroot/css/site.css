@@ -18,6 +18,11 @@ i {
     color: #C0C3C9;
 }
 
+    i:hover {
+        color: cadetblue;
+        transform: scale(1.2, 1.2);
+    }
+
 td i {
     color: darkgray;
 }
@@ -25,7 +30,6 @@ td i {
 section.hero {
    margin-top: 100px;
     min-height: 300px;
-    background-color: aliceblue;
 }
 
 #home {

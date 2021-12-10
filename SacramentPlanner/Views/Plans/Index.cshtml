@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<SacramentPlanner.Models.Plan>
-
 @{
     ViewData["Title"] = "Sacrament Meeting Planner";
 }
@@ -10,18 +9,15 @@
             <a class="btn btn-outline-primary mt-2" asp-action="Create">Create New</a>
             <form class="form-inline justify-content-center" asp-controller="Plans" asp-action="Index" method="get">
                 <div class="input-group">
-                    <input type="text" name="SearchString" />
+                    <input type="text" name="SearchString" placeholder="Subject"/>
                     <input class="btn btn-primary my-2 my-sm-0" type="submit" value="Filter" />
                 </div>
             </form>
         </div>
-
     </div>
 </section>
-
 <div class="container pcard ">
     <div class="card-deck mt-2">
-
         @foreach (var item in Model)
         {
             <div class="card col-sm-6  custom-card">
@@ -40,7 +36,6 @@
 
     </div>
 </div>
-
 <a class="btn btn-outline-primary" asp-action="Index">Back to Full List</a>
 @*<table class="table">
     <thead>
