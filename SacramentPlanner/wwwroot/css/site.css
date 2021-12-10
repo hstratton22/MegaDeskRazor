@@ -5,7 +5,10 @@ for details on configuring this project to bundle and minify static web assets. 
 html, body {
     font-family: 'Open Sans', sans-serif !important ;
     color: #5F6876;
-    background-color: whitesmoke;
+}
+
+input, select {
+    color: dimgray !important;
 }
 
 a.navbar-brand {
@@ -23,23 +26,11 @@ i {
         transform: scale(1.2, 1.2);
     }
 
-td i {
-    color: darkgray;
-}
 
-section.hero {
-   margin-top: 100px;
-    min-height: 300px;
-}
-
-#home {
-    margin-top: 50px;
-    text-align: center;
-}
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #C0C3C9;
+    color: white;
 }
 
 /*.btn-primary {
@@ -60,17 +51,9 @@ html {
     font-size: 14px;
 }
 
-
-hr{
+hr {
     margin-top: 2rem;
 }
-
-.card-footer {
-    border-top: none;
-    background-color: white;
-    padding: 0.5rem 0rem 0.5rem 4.5rem;
-}
-
 
 .pcard {
     padding-top: 1rem;
@@ -83,26 +66,11 @@ hr{
     -ms-flex-direction: column;
     flex-direction: column;
     flex-flow: wrap;
-    
 }
 
-
-
-.form-group {
-    line-height: 35px;
-} 
-
-.card {
-    transition: box-shadow .3s;
-}
-
-    .card:hover {
-        box-shadow: 0 0 11px rgba(33,33,33,.2);
-    }
-
-.card-deck .card {
+    .card-deck .card {
         margin-bottom: 30px;
-}
+    }
 
 .custom-card {
     min-width: 18rem;
@@ -113,15 +81,22 @@ hr{
     padding: 0;
 }
 
-
 .card-text {
-    padding-right: .5rem;
-    padding-left: .5rem
+    padding: .5rem;
 }
+
 .card-header {
-    background-color: slategrey;
-    color: white;
+    background-color: #2C3E50;
 }
+
+.card {
+    transition: box-shadow .3s;
+}
+
+    .card:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
+
 
 @media (min-width: 576px) {
     .card-deck {

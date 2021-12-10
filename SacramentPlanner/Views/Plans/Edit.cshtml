@@ -3,81 +3,75 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
-<h1>Edit</h1>
-
-<h4>Plan</h4>
-<div class="container-fluid text-dark">
+<h2 class="mt-5">Edit Plan</h2>
+<div class="container-fluid">
     <div class="row justify-content-center align-items-center h-100">
-        <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="hidden" asp-for="Id" />
                 <div class="form-floating mb-3 mt-3">
-                    <input asp-for="Date" class="form-control" placeholder="Enter date" />
-                    <label asp-for="Date" class="control-label">Date</label>
-                    <span asp-validation-for="Date" class="text-danger"></span>
+                    <input type="Date" asp-for="Date" class="form-control" />
+                    <label asp-for="Date" class="control-label"></label>
+                    <span asp-validation-for="Date" class="text-danger small"></span>
                 </div>
                 <div class="form-floating mt-3 mb-3">
-                    <input asp-for="Conductor" class="form-control" placeholder="Enter date" />
+                    <input asp-for="Conductor" class="form-control" placeholder="Enter Conductor" />
                     <label asp-for="Conductor" class="control-label">Conductor</label>
-                    <span asp-validation-for="Conductor" class="text-danger"></span>
+                    <span asp-validation-for="Conductor" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="OpeningSong" class="control-label"></label>
+                <div class="form-floating mt-3 mb-3">
                     <select asp-for="OpeningSong" class="form-control" asp-items="ViewBag.hymns">
                         <option value="">-- Select Hymn --</option>
                     </select>
-                    <span asp-validation-for="OpeningSong" class="text-danger"></span>
+                    <label asp-for="OpeningSong" class="control-label">Opening Song</label>
+                    <span asp-validation-for="OpeningSong" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="OpeningPrayer" class="control-label"></label>
-                    <input asp-for="OpeningPrayer" class="form-control" />
-                    <span asp-validation-for="OpeningPrayer" class="text-danger"></span>
+                <div class="form-floating mt-3 mb-3">
+                    <input asp-for="OpeningPrayer" class="form-control" placeholder="Opening Prayer" />
+                    <label asp-for="OpeningPrayer" class="control-label">Opening Prayer</label>
+                    <span asp-validation-for="OpeningPrayer" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="SacramentSong" class="control-label"></label>
+                <div class="form-floating mt-3 mb-3">
                     <select asp-for="SacramentSong" class="form-control" asp-items="ViewBag.hymns">
                         <option value="">-- Select Hymn --</option>
                     </select>
-                    <span asp-validation-for="SacramentSong" class="text-danger"></span>
+                    <label asp-for="SacramentSong" class="control-label"></label>
+                    <span asp-validation-for="SacramentSong" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="IntermediateSong" class="control-label"></label>
+                <div class="form-floating mt-3 mb-3">
                     <select asp-for="IntermediateSong" class="form-control" asp-items="ViewBag.hymns">
                         <option value="">-- Select Hymn --</option>
                     </select>
-                    <span asp-validation-for="IntermediateSong" class="text-danger"></span>
+                    <label asp-for="IntermediateSong" class="control-label">Intermediate Song</label>
+                    <span asp-validation-for="IntermediateSong" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="ClosingSong" class="control-label"></label>
+                <div class="form-floating mt-3 mb-3">
                     <select asp-for="ClosingSong" class="form-control" asp-items="ViewBag.hymns">
                         <option value="">-- Select Hymn --</option>
                     </select>
-                    <span asp-validation-for="ClosingSong" class="text-danger"></span>
+                    <label asp-for="ClosingSong" class="control-label">Closing Song</label>
+                    <span asp-validation-for="ClosingSong" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="ClosingPrayer" class="control-label"></label>
-                    <input asp-for="ClosingPrayer" class="form-control" />
-                    <span asp-validation-for="ClosingPrayer" class="text-danger"></span>
+                <div class="form-floating mt-3 mb-3">
+                    <input asp-for="ClosingPrayer" class="form-control" placeholder="Closing Prayer" />
+                    <label asp-for="ClosingPrayer" class="control-label">Closing Prayer</label>
+                    <span asp-validation-for="ClosingPrayer" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="SpeakerSubjects" class="control-label"></label>
-                    <input asp-for="SpeakerSubjects" class="form-control" />
-                    <span asp-validation-for="SpeakerSubjects" class="text-danger"></span>
+                <div class="form-floating mt-3 mb-3">
+                    <input asp-for="SpeakerSubjects" class="form-control" placeholder="Speaker Subject" />
+                    <label asp-for="SpeakerSubjects" class="control-label">Speaker Subject</label>
+                    <span asp-validation-for="SpeakerSubjects" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="NumberSpeakers" class="control-label"></label>
-                    <input asp-for="NumberSpeakers" class="form-control" />
-                    <span asp-validation-for="NumberSpeakers" class="text-danger"></span>
+                <div class="form-floating mt-3 mb-3">
+                    <input asp-for="NumberSpeakers" class="form-control" placeholder="Number of Speakers" />
+                    <label asp-for="NumberSpeakers" class="control-label">Number of speakers</label>
+                    <span asp-validation-for="NumberSpeakers" class="text-danger small"></span>
                 </div>
-                <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-primary" />
+                <div class="form-group mt-3">
+                    <input type="submit" value="Create" class="btn btn-primary" />
                 </div>
             </form>
         </div>
     </div>
-</div>
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

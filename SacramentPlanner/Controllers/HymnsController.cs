@@ -1,4 +1,6 @@
 ﻿using System;
+using PagedList;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,7 +22,7 @@ namespace SacramentPlanner.Controllers
         }
 
         // GET: Hymns
-        public async Task<IActionResult> Index(string searchWord)
+        public async Task<IActionResult> Index(string searchWord, int? page)
         {
             var hymns = from m in _context.Hymns
                         orderby m.Num
@@ -31,7 +33,11 @@ namespace SacramentPlanner.Controllers
                 hymns = (IOrderedQueryable<Hymns>)hymns.Where(s => s.Name.Contains(searchWord));
             }
 
-            return View(await hymns.ToListAsync());
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+
+            return View(hymns.ToPagedList(pageNumber, pageSize));
+
 
             //return View(await _context.Hymns.ToListAsync());
         }

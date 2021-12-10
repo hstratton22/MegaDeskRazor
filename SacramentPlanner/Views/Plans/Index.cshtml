@@ -1,35 +1,41 @@
 ﻿@model IEnumerable<SacramentPlanner.Models.Plan>
+
 @{
     ViewData["Title"] = "Sacrament Meeting Planner";
 }
-<section class="hero mt-xl-5">
-    <div class="jumbotron jumbotron-fluid" id="home">
-        <div class="container">
-            <h1 class="display-4 mt-5">Sacrament Meeting Planner</h1>
-            <a class="btn btn-outline-primary mt-2" asp-action="Create">Create New</a>
-            <form class="form-inline justify-content-center" asp-controller="Plans" asp-action="Index" method="get">
-                <div class="input-group">
-                    <input type="text" name="SearchString" placeholder="Subject"/>
-                    <input class="btn btn-primary my-2 my-sm-0" type="submit" value="Filter" />
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
+
+<h1 class="text-center mb-3 mt-5 ">Sacrament Meeting Planner</h1>
+
+<div class="pcard">
+
+    <form class="text-center mt-3 mb-3" asp-controller="Plans" asp-action="Index" method="get">
+
+        <a class="btn btn-primary float-start" asp-action="Create">Create New Plan</a>
+        <span class="float-end mx-2">
+            <input type="text" name="SearchString" class="text-light" placeholder="Subject:" />
+            <input class="btn btn-primary mx-2 text-light" type="submit" value="Filter" />
+        </span>
+
+    </form>
+
+</div>
+
+<hr />
 <div class="container pcard ">
     <div class="card-deck mt-2">
+
         @foreach (var item in Model)
         {
             <div class="card col-sm-6  custom-card">
                 <div class="card-body">
                     <h5 class="card-header text-center text-light"> @Html.DisplayFor(modelItem => item.Date)</h5>
-                    <p class="card-text text-center"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :  @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
-                    <p class="card-text text-center">This is where speaker names will go</p>
+                    <p class="card-text"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :  @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
+                    <p class="card-text">This is where speaker names will go</p>
                 </div>
-                <div class="card-footer">
-                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit me-5 text-center"></i></a>
-                    <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-info me-5 text-center"></i></a>
-                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="far fa-trash-alt me-5 text-center"></i></a>
+                <div class="card-footer text-center">
+                    <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit me-4 text-center dark"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-info me-4 text-center dark"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id"><i class="far fa-trash-alt me-4 text-center dark"></i></a>
                 </div>
             </div>
         }
