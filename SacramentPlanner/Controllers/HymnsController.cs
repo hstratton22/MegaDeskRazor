@@ -20,9 +20,20 @@ namespace SacramentPlanner.Controllers
         }
 
         // GET: Hymns
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchWord)
         {
-            return View(await _context.Hymns.ToListAsync());
+            var hymns = from m in _context.Hymns
+                        orderby m.Num
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchWord))
+            {
+                hymns = (IOrderedQueryable<Hymns>)hymns.Where(s => s.Name.Contains(searchWord));
+            }
+
+            return View(await hymns.ToListAsync());
+
+            //return View(await _context.Hymns.ToListAsync());
         }
 
         // GET: Hymns/Details/5
