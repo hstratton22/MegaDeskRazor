@@ -1,9 +1,6 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace SacramentPlanner.Models
 {
@@ -37,8 +34,8 @@ namespace SacramentPlanner.Models
         public string ClosingPrayer { get; set; }
         [Display(Name = "Subject")]
         public string SpeakerSubjects { get; set; }
-        [Display(Name = "Number Speakers")]
-        public int NumberSpeakers { get; set; }
+        [Display(Name = "Speakers")]
+        public ICollection<Speaker> Speakers { get; set; }
 
         
     }
