@@ -21,8 +21,7 @@ namespace SacramentPlanner.Migrations
                     IntermediateSong = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ClosingSong = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ClosingPrayer = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SpeakerSubjects = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NumberSpeakers = table.Column<int>(type: "int", nullable: false)
+                    SpeakerSubjects = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

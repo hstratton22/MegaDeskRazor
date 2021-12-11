@@ -2,9 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using SacramentPlanner.Data;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SacramentPlanner.Models
 {
@@ -12,6 +10,7 @@ namespace SacramentPlanner.Models
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
+
             using (var context = new SacramentPlannerContext(serviceProvider.GetRequiredService<DbContextOptions<SacramentPlannerContext>>()))
             {
                 if (context.Plan.Any())
@@ -30,13 +29,32 @@ namespace SacramentPlanner.Models
                         ClosingSong = "206 - Away in a Manger",
                         ClosingPrayer = "Jane Doe",
                         SpeakerSubjects = "Christmas",
-                        NumberSpeakers = 2
-
                     }
 
                     );
                 context.SaveChanges();
-             }
+            }
+
+
+            using (var context = new SacramentPlannerContext(serviceProvider.GetRequiredService<DbContextOptions<SacramentPlannerContext>>()))
+            {
+                if (context.Speakers.Any())
+                {
+                    return;
+                }
+                var speakers = new Speaker[]
+                {
+                new Speaker{PlanID=1,FirstMidName="Carson",LastName="Alexander",},
+                new Speaker{PlanID=1,FirstMidName="Meredith",LastName="Alonso"},
+                new Speaker{PlanID=1,FirstMidName="Arturo",LastName="Anand",},
+                new Speaker{PlanID=1,FirstMidName="Gytis",LastName="Barzdukas",}
+                };
+                foreach (Speaker s in speakers)
+                {
+                    context.Speakers.Add(s);
+                }
+                context.SaveChanges();;
+            }
 
             using (var context = new SacramentPlannerContext(serviceProvider.GetRequiredService<DbContextOptions<SacramentPlannerContext>>()))
             {
