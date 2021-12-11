@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using SacramentPlanner.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace SacramentPlanner.Data
 {
@@ -17,5 +12,8 @@ namespace SacramentPlanner.Data
         public DbSet<SacramentPlanner.Models.Plan> Plan { get; set; }
 
         public DbSet<SacramentPlanner.Models.Hymns> Hymns { get; set; }
+
+        public DbSet<SacramentPlanner.Models.Speaker> Speakers { get; set; }
+
     }
 }
