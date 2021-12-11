@@ -33,13 +33,13 @@ namespace SacramentPlanner.Controllers
                 hymns = (IOrderedQueryable<Hymns>)hymns.Where(s => s.Name.Contains(searchWord));
             }
 
-            int pageSize = 3;
-            int pageNumber = (page ?? 1);
+            //int pageSize = 3;
+            //int pageNumber = (page ?? 1);
 
-            return View(hymns.ToPagedList(pageNumber, pageSize));
+            //return View(hymns.ToPagedList(pageNumber, pageSize));
 
 
-            //return View(await _context.Hymns.ToListAsync());
+            return View(await hymns.ToListAsync());
         }
 
         // GET: Hymns/Details/5
