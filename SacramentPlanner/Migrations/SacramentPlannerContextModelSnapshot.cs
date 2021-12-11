@@ -63,9 +63,6 @@ namespace SacramentPlanner.Migrations
                     b.Property<string>("IntermediateSong")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("NumberSpeakers")
-                        .HasColumnType("int");
-
                     b.Property<string>("OpeningPrayer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -84,6 +81,48 @@ namespace SacramentPlanner.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Plan");
+                });
+
+            modelBuilder.Entity("SacramentPlanner.Models.Speaker", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("FirstMidName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("FirstName");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("PlanID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("PlanID");
+
+                    b.ToTable("Speakers");
+                });
+
+            modelBuilder.Entity("SacramentPlanner.Models.Speaker", b =>
+                {
+                    b.HasOne("SacramentPlanner.Models.Plan", null)
+                        .WithMany("Speakers")
+                        .HasForeignKey("PlanID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SacramentPlanner.Models.Plan", b =>
+                {
+                    b.Navigation("Speakers");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -30,8 +29,7 @@ namespace SacramentPlanner.Controllers
                 plans = plans.Where(s => s.SpeakerSubjects!.Contains(searchString));
             }
 
-            return View(await plans.ToListAsync());
-            //return View(await _context.Plan.ToListAsync());
+            return View(await plans.Include(p => p.Speakers).AsNoTracking().ToListAsync());
         }
 
         // GET: Plans/Details/5
@@ -43,6 +41,8 @@ namespace SacramentPlanner.Controllers
             }
 
             var plan = await _context.Plan
+                .Include(p => p.Speakers)
+                .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (plan == null)
             {
@@ -64,14 +64,25 @@ namespace SacramentPlanner.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date,Conductor,OpeningSong,OpeningPrayer,SacramentSong,IntermediateSong,ClosingSong,ClosingPrayer,SpeakerSubjects,NumberSpeakers")] Plan plan)
+        public async Task<IActionResult> Create([Bind("Date,Conductor,OpeningSong,OpeningPrayer,SacramentSong,IntermediateSong,ClosingSong,ClosingPrayer,SpeakerSubjects,NumberSpeakers")] Plan plan)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(plan);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    _context.Add(plan);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
+            catch (DbUpdateException /* ex */)
+            {
+                //Log the error (uncomment ex variable name and write a log.
+                ModelState.AddModelError("", "Unable to save changes. " +
+                    "Try again, and if the problem persists " +
+                    "see your system administrator.");
+            }
+
             return View(plan);
         }
 
