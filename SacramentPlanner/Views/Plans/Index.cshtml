@@ -14,6 +14,7 @@
         <span class="float-end mx-2">
             <input type="text" name="SearchString"  placeholder="Subject" />
             <input class="btn btn-primary mx-2 text-light" type="submit" value="Filter" />
+            <a class="btn btn-primary mx-2 text-light"asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">Sort By Date</a>
         </span>
 
     </form>

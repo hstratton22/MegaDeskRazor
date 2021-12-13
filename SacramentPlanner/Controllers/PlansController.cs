@@ -19,14 +19,29 @@ namespace SacramentPlanner.Controllers
         }
 
         // GET: Plans
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string sortOrder, string searchString)// added sortOrder
         {
-            var plans = from m in _context.Plan
-                         select m;
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";// added
+            ViewData["CurrentFilter"] = searchString;//added
+
+            var plans = from p in _context.Plan
+                         select p;
 
             if (!String.IsNullOrEmpty(searchString))
             {
                 plans = plans.Where(s => s.SpeakerSubjects!.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "Date":
+                    plans = plans.OrderBy(p => p.Date);
+                    break;
+                case "date_desc":
+                    plans = plans.OrderByDescending(p => p.Date);
+                    break;
+                default:
+                    plans = plans.OrderBy(p => p.Date);
+                    break;
             }
 
             return View(await plans.Include(p => p.Speakers).AsNoTracking().ToListAsync());
