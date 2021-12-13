@@ -3,15 +3,14 @@
 @{
     ViewData["Title"] = "Index";
 }
-
 <h1 class="mt-5">Hymn List</h1>
 <form asp-controller="Hymns" asp-action="Index" method="get">
     <p>
-        Search Title<input type="text" name="SearchWord" />
+        Search Title
+        <input type="text" name="SearchWord" />
         <input type="submit" class="btn btn-primary mx-2 text-light" value="Filter" />
         <a class="btn btn-outline-primary" asp-action="Index">Back to Full List</a>
         <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
-
     </p>
 </form>
 <table class="table">
@@ -36,9 +35,15 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id"><i class="far fa-edit me-4 text-center dark"></i></a>
-                <a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-info me-4 text-center dark"></i></a>
-                <a asp-action="Delete" asp-route-id="@item.Id"><i class="far fa-trash-alt me-4 text-center dark"></i></a>
+                <a asp-action="Edit" aria-label="Edit" asp-route-id="@item.Id">
+                    <i class="far fa-edit me-4 text-center dark" aria-hidden="true"></i>
+                </a>
+                <a asp-action="Details" aria-label="Details" asp-route-id="@item.Id">
+                    <i class="fas fa-info me-4 text-center dark" aria-hidden="true"></i>
+                </a>
+                <a asp-action="Delete" aria-label="Delete" asp-route-id="@item.Id">
+                    <i class="far fa-trash-alt me-4 text-center dark" aria-hidden="true"></i>
+                </a>
             </td>
         </tr>
 }
