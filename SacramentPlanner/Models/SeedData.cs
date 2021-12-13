@@ -59,8 +59,8 @@ namespace SacramentPlanner.Models
                 {
                 new Speaker{PlanID=2,FirstMidName="Ebenezer",LastName="Scrooge",},
                 new Speaker{PlanID=2,FirstMidName="Alvin",LastName="Smith"},
-                new Speaker{PlanID=2,FirstMidName="Skywalker",LastName="Anakin",},
-                new Speaker{PlanID=2,FirstMidName="Crouch",LastName="Barty",}
+                new Speaker{PlanID=2,FirstMidName="Anakin",LastName="Skywalker",},
+                new Speaker{PlanID=2,FirstMidName="Barty",LastName="Crouch",}
                 };
                 foreach (Speaker s in speakers)
                 {
