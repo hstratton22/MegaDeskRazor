@@ -76,8 +76,8 @@
                             @Html.DisplayFor(modelItem => item.FullName)
                         </td>
                         <td>
-                            <a asp-controller="Speakers" asp-action="Edit" class="btn btn-info" asp-route-id="@item.ID">Edit</a>
-                            <a asp-controller="Speakers" asp-action="Delete" class="btn btn-info" asp-route-id="@item.ID">Delete</a>
+                            <a asp-controller="Speakers"  aria-label="Edit" asp-action="Edit" class="btn btn-info" asp-route-id="@item.ID">Edit</a>
+                            <a asp-controller="Speakers"  aria-label="Delete"asp-action="Delete" class="btn btn-info" asp-route-id="@item.ID">Delete</a>
                         </td>
                     </tr>
                 }
