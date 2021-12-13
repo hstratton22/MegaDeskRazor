@@ -4,16 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h1 class="mt-5">Hymn List</h1>
 <form asp-controller="Hymns" asp-action="Index" method="get">
     <p>
-         Search Title: <input type="text" name="SearchWord" />
+        Search Title<input type="text" name="SearchWord" />
         <input type="submit" class="btn btn-primary mx-2 text-light" value="Filter" />
         <a class="btn btn-outline-primary" asp-action="Index">Back to Full List</a>
+        <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
+
     </p>
 </form>
 <table class="table">
