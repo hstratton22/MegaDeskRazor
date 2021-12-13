@@ -27,16 +27,26 @@
 
         @foreach (var item in Model)
         {
-            <div class="card col-sm-6  custom-card">
+            <div class="card col-sm-6 custom-card">
                 <div class="card-body">
                     <h5 class="card-header text-center text-light"> @Html.DisplayFor(modelItem => item.Date)</h5>
-                    <p class="card-text"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :  @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
-                    @foreach (var speaker in item.Speakers)
-                    {
-                        <p class="card-text">@Html.DisplayFor(modelItem => speaker.FullName)</p>
 
-                    }
+                    <div class="d-grid">
+                        <div class="row custom-row">
+                            <p class="card-subject"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :</p>
+                            <p class="card-detail card-speakers-subject"> @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
+                        </div>
+                        <hr />
+                        <div class="row custom-row">
+                            <p class="card-subject card-speakers-title">Speakers: </p>
+            
+                            @foreach (var speaker in item.Speakers)
+                            {
+                        <p class="card-detail card-speakers">@Html.DisplayFor(modelItem => speaker.FirstMidName) @Html.DisplayFor(modelItem => speaker.LastName)</p>
 
+                            }
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer text-center">
                     <a asp-action="Edit" aria-label="Edit" asp-route-id="@item.Id">

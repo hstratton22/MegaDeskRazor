@@ -51,8 +51,32 @@ html {
     font-size: 14px;
 }
 
-hr {
-    margin-top: 2rem;
+
+
+.card-subject{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.card-detail {
+    font-size: 1.3rem;
+}
+
+.custom-row{
+    max-width: 95%;
+    margin-left: .5rem;
+}
+
+.card-speakers, .card-speakers-subject{
+    text-align: right;
+    margin-top: 0 !important;
+}
+
+.card-speakers-title {
+    margin-bottom: .5rem !important;
 }
 
 .pcard {
@@ -68,7 +92,7 @@ hr {
     flex-flow: wrap;
 }
 
-    .card-deck .card {
+.card-deck .card {
         margin-bottom: 30px;
     }
 
@@ -106,18 +130,24 @@ hr {
         margin-left: -15px;
     }
 
-        .card-deck .card {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex: 1 0 0%;
-            flex: 1 0 0%;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            margin-right: 15px;
+    .card-deck .card {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 15px;
             
-            margin-left: 15px;
-        }
+        margin-left: 15px;
+    }
 
+    .card-detail {
+        margin-top: 1rem;
+    }
+    .card-subject {
+        margin-bottom: auto;
+    }
   
 }
 
