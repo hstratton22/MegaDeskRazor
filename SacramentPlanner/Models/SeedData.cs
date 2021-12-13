@@ -21,15 +21,28 @@ namespace SacramentPlanner.Models
                     new Plan
                     {
                         Date = DateTime.Parse("2021-12-4"),
-                        Conductor = "Bishop",
+                        Conductor = "Bishop Rick Smith",
                         OpeningSong = "201 - Joy to the World",
-                        OpeningPrayer = "John Doe",
-                        SacramentSong = "171 - With Humble Heart",
-                        IntermediateSong = "212 - Far, Far Away on Judea's Plains",
+                        OpeningPrayer = "Abraham Lincoln",
+                        SacramentSong = "171 - In Humility, Our Savior",
                         ClosingSong = "206 - Away in a Manger",
-                        ClosingPrayer = "Jane Doe",
+                        ClosingPrayer = "Jane Adams",
                         SpeakerSubjects = "Christmas",
-                    }
+                    },
+
+                    
+                new Plan
+                {
+                    Date = DateTime.Parse("2021-12-12"),
+                    Conductor = "Bishop Rick Smith",
+                    OpeningSong = "202 - Oh, Come All Ye Faithful",
+                    OpeningPrayer = "John Adams",
+                    SacramentSong = "172 - With Humble Heart",
+                    IntermediateSong = "212 - Far, Far Away on Judea's Plains",
+                    ClosingSong = "213 - The First Noel",
+                    ClosingPrayer = "Lucy Smith",
+                    SpeakerSubjects = "Christmas",
+                }
 
                     );
                 context.SaveChanges();
@@ -44,10 +57,10 @@ namespace SacramentPlanner.Models
                 }
                 var speakers = new Speaker[]
                 {
-                new Speaker{PlanID=1,FirstMidName="Carson",LastName="Alexander",},
-                new Speaker{PlanID=1,FirstMidName="Meredith",LastName="Alonso"},
-                new Speaker{PlanID=1,FirstMidName="Arturo",LastName="Anand",},
-                new Speaker{PlanID=1,FirstMidName="Gytis",LastName="Barzdukas",}
+                new Speaker{PlanID=2,FirstMidName="Ebenezer",LastName="Scrooge",},
+                new Speaker{PlanID=2,FirstMidName="Alvin",LastName="Smith"},
+                new Speaker{PlanID=2,FirstMidName="Skywalker",LastName="Anakin",},
+                new Speaker{PlanID=2,FirstMidName="Crouch",LastName="Barty",}
                 };
                 foreach (Speaker s in speakers)
                 {

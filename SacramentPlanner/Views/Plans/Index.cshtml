@@ -9,27 +9,37 @@
     <form class="text-center mt-3 mb-3" asp-controller="Plans" asp-action="Index" method="get">
         <a class="btn btn-primary float-start" asp-action="Create">Create New Plan</a>
         <span class="float-end mx-2">
-            <input type="text" name="SearchString"  placeholder="Subject" />
+            <input type="text" name="SearchString" placeholder="Subject" />
             <input class="btn btn-primary mx-2 text-light" type="submit" value="Filter" />
-            <a class="btn btn-primary mx-2 text-light"asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">Sort By Date</a>
+            <a class="btn btn-primary mx-2 text-light" asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">Sort By Date</a>
         </span>
     </form>
 </div>
 <hr />
-<div class="container pcard ">
+<div class="container pcard">
     <div class="card-deck mt-2">
         @foreach (var item in Model)
         {
-            <div class="card col-sm-6  custom-card">
+            <div class="card col-sm-6 custom-card">
                 <div class="card-body">
                     <h5 class="card-header text-center text-light"> @Html.DisplayFor(modelItem => item.Date)</h5>
-                    <p class="card-text"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :  @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
-                    @foreach (var speaker in item.Speakers)
-                    {
-                        <p class="card-text">@Html.DisplayFor(modelItem => speaker.FullName)</p>
 
-                    }
+                    <div class="d-grid">
+                        <div class="row custom-row">
+                            <p class="card-subject"> @Html.DisplayNameFor(model => model.SpeakerSubjects) :</p>
+                            <p class="card-detail card-speakers-subject"> @Html.DisplayFor(modelItem => item.SpeakerSubjects)</p>
+                        </div>
+                        <hr />
+                        <div class="row custom-row">
+                            <p class="card-subject card-speakers-title">Speakers: </p>
+            
+                            @foreach (var speaker in item.Speakers)
+                            {
+                        <p class="card-detail card-speakers">@Html.DisplayFor(modelItem => speaker.FirstMidName) @Html.DisplayFor(modelItem => speaker.LastName)</p>
 
+                            }
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer text-center">
                     <a asp-action="Edit" aria-label="Edit" asp-route-id="@item.Id">
