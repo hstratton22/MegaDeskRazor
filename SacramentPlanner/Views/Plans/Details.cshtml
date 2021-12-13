@@ -5,7 +5,7 @@
 }
 
     <h2 class="mt-5">Details</h2>
-    <dl class="row">
+    <dl class="row mt-5">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Date)
         </dt>
@@ -76,9 +76,17 @@
                             @Html.DisplayFor(modelItem => item.FullName)
                         </td>
                         <td>
-                            <a asp-controller="Speakers"  aria-label="Edit" asp-action="Edit" class="btn btn-info" asp-route-id="@item.ID">Edit</a>
-                            <a asp-controller="Speakers"  aria-label="Delete"asp-action="Delete" class="btn btn-info" asp-route-id="@item.ID">Delete</a>
+
+            
+                   
+                                <a asp-controller="Speakers" aria-label="Edit" asp-action="Edit" asp-route-id="@item.ID"> 
+                                    <i class="far fa-edit me-4 text-center dark" aria-hidden="true"></i>
+                            </a>
+                                <a asp-controller="Speakers" aria-label="Delete" asp-action="Delete" asp-route-id="@item.ID">
+                                    <i class="far fa-trash-alt me-4 text-center dark" aria-hidden="true"></i>
+                                </a>
                         </td>
+
                     </tr>
                 }
             </table>
