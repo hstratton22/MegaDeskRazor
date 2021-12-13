@@ -5,8 +5,7 @@
 }
 
 <h1 class="mt-5">Details</h1>
-<div>
-    <dl class="row">
+    <dl class="row mt-5">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Num)
         </dt>
@@ -22,6 +21,6 @@
     </dl>
 
     <div>
-        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> 
-        <a class="btn btn-outline-primary" asp-action="Index">Back to Full List</a>
+        <a asp-action="Edit " class="btn btn-primary mt-3" asp-route-id="@Model.Id">Edit</a> 
+        <a class="btn btn-primary mt-3" asp-action="Index">Back to Full List</a>
     </div>

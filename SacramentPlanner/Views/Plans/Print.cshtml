@@ -1,0 +1,99 @@
+﻿@model SacramentPlanner.Models.Plan
+
+@{
+    ViewData["Title"] = "Print";
+}
+
+<h2 class="mt-5">Print Preview</h2>
+<div id="printArea">
+    <dl class="row mt-5">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Conductor)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.Conductor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OpeningSong)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.OpeningSong)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OpeningPrayer)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.OpeningPrayer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SacramentSong)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.SacramentSong)
+        </dd>
+        <dd>Administration of Sacrament</dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IntermediateSong)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.IntermediateSong)
+        </dd>
+
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Speakers)
+        </dt>
+        <dd class="col-sm-10">
+
+
+            @foreach (var item in Model.Speakers)
+            {
+
+                <!--
+
+        <tr>
+
+
+                <td>-->
+                @Html.DisplayFor(modelItem => item.FullName)
+                <!--</td>
+
+
+        </tr>-->
+            }
+
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClosingSong)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.ClosingSong)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClosingPrayer)
+        </dt>
+        <dd class="col-sm-10">
+            ........
+            @Html.DisplayFor(model => model.ClosingPrayer)
+        </dd>
+
+
+    </dl>
+</div>
+<div>
+    
+    <a class="btn btn-outline-primary" asp-action="Index">Back to List</a>
+</div>

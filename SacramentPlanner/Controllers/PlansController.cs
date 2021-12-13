@@ -66,6 +66,25 @@ namespace SacramentPlanner.Controllers
 
             return View(plan);
         }
+        // GET: Plans/Details/5
+        public async Task<IActionResult> Print(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var plan = await _context.Plan
+                .Include(p => p.Speakers)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (plan == null)
+            {
+                return NotFound();
+            }
+
+            return View(plan);
+        }
 
         // GET: Plans/Create
         public IActionResult Create()
