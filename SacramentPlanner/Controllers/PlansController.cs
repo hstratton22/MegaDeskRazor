@@ -19,10 +19,10 @@ namespace SacramentPlanner.Controllers
         }
 
         // GET: Plans
-        public async Task<IActionResult> Index(string sortOrder, string searchString)// added sortOrder
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";// added
-            ViewData["CurrentFilter"] = searchString;//added
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewData["CurrentFilter"] = searchString;
 
             var plans = from p in _context.Plan
                          select p;
@@ -34,10 +34,10 @@ namespace SacramentPlanner.Controllers
             switch (sortOrder)
             {
                 case "Date":
-                    plans = plans.OrderBy(p => p.Date);
+                    plans = plans.OrderByDescending(p => p.Date);
                     break;
                 case "date_desc":
-                    plans = plans.OrderByDescending(p => p.Date);
+                    plans =  plans.OrderBy(p => p.Date);
                     break;
                 default:
                     plans = plans.OrderBy(p => p.Date);
