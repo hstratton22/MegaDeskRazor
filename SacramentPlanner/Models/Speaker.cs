@@ -22,7 +22,7 @@ namespace SacramentPlanner.Models
         {
             get
             {
-                return LastName + ", " + FirstMidName;
+                return FirstMidName + " " + LastName;// + ", " + FirstMidName;
             }
         }
     }
