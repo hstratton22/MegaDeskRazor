@@ -25,6 +25,10 @@ i {
         color: cadetblue;
         transform: scale(1.2, 1.2);
     }
+dl.sbs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1fr, 2fr));
+}
 
 
 /* Provide sufficient contrast against white background */
