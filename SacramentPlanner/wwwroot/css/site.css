@@ -26,6 +26,11 @@ i {
         transform: scale(1.2, 1.2);
     }
 
+@media print {
+    .hidden-print {
+        display: none !important;
+    }
+}
 
 
 /* Provide sufficient contrast against white background */

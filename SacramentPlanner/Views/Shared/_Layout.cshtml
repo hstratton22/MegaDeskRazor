@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
+    <header class="hidden-print">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand"  asp-controller="Plans" asp-action="Index">Sacrament Planner</a>
@@ -41,7 +41,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted hidden-print">
         <div class="container">
             &copy; 2021 - Sacrament Planner - <a asp-area="" asp-controller="Home" class="text-black " asp-action="About">About</a>
         </div>
