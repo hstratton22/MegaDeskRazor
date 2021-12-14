@@ -29,6 +29,15 @@ dl.sbs {
     display: grid;
     grid-template-columns: repeat(2, minmax(1fr, 2fr));
 }
+@page {
+    size: auto;
+    margin: 0mm;
+}
+@media print {
+    .hidden-print {
+        display: none !important;
+    }
+}
 
 
 /* Provide sufficient contrast against white background */
